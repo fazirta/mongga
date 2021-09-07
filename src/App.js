@@ -1,8 +1,12 @@
 import Footer from './Footer/index';
+import Navbar from './Navbar/index';
 
 function App() {
   return (
-    <Footer />
+    <>
+      <Navbar />
+      <Footer />
+    </>
   );
 }
 
