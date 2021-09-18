@@ -1,98 +1,85 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
     BookmarkAltIcon,
     CalendarIcon,
-    ChartBarIcon,
-    CursorClickIcon,
     MenuIcon,
     PhoneIcon,
-    PlayIcon,
-    RefreshIcon,
+    AcademicCapIcon,
     ShieldCheckIcon,
     SupportIcon,
-    ViewGridIcon,
+    UsersIcon,
     XIcon,
+    UserGroupIcon,
+    ArchiveIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import {
+    Link,
+} from "react-router-dom";
 
 const solutions = [
     {
-        name: 'Analytics',
-        description: 'Get a better understanding of where your traffic is coming from.',
-        href: '#',
-        icon: ChartBarIcon,
+        name: 'Tentang Kami',
+        description: 'Get Link better understanding of where your traffic is coming from.',
+        to: '#',
+        icon: UsersIcon,
     },
     {
-        name: 'Engagement',
-        description: 'Speak directly to your customers in a more meaningful way.',
-        href: '#',
-        icon: CursorClickIcon,
+        name: 'Aktivitas',
+        description: 'Speak directly to your customers in Link more meaningful way.',
+        to: '/aktivitas',
+        icon: AcademicCapIcon,
     },
-    { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+    { name: 'Produk', description: "Your customers' data will be safe and secure.", to: '/produk', icon: ArchiveIcon },
     {
-        name: 'Integrations',
+        name: 'Komunitas',
         description: "Connect with third-party tools that you're already using.",
-        href: '#',
-        icon: ViewGridIcon,
+        to: '/komunitas',
+        icon: UserGroupIcon,
     },
     {
-        name: 'Automations',
+        name: 'Hubungi Kami',
         description: 'Build strategic funnels that will drive your customers to convert',
-        href: '#',
-        icon: RefreshIcon,
+        to: '/contactus',
+        icon: PhoneIcon,
     },
-]
-const callsToAction = [
-    { name: 'Watch Demo', href: '#', icon: PlayIcon },
-    { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ]
 const resources = [
     {
         name: 'Help Center',
         description: 'Get all of your questions answered in our forums or contact support.',
-        href: '#',
+        to: '#',
         icon: SupportIcon,
     },
     {
         name: 'Guides',
         description: 'Learn how to maximize our platform to get the most out of it.',
-        href: '#',
+        to: '#',
         icon: BookmarkAltIcon,
     },
     {
         name: 'Events',
         description: 'See what meet-ups and other events we might be planning near you.',
-        href: '#',
+        to: '#',
         icon: CalendarIcon,
     },
-    { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+    { name: 'Security', description: 'Understand how we take your privacy seriously.', to: '#', icon: ShieldCheckIcon },
 ]
-const recentPosts = [
-    { id: 1, name: 'Boost your conversion rate', href: '#' },
-    { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-    { id: 3, name: 'Improve your customer experience', href: '#' },
-]
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export default function Navbar() {
     return (
-        <Popover className="relative bg-white">
+        <Popover className="sticky top-0 relative bg-white border-b-2 border-gray-100 font-barlow">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-                    <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
-                            <span className="sr-only">Workflow</span>
+                <div className="flex justify-between items-center py-6 px-10 lg:px-20 md:justify-between">
+                    <div className="flex justify-start">
+                        <Link to="/">
+                            <span className="sr-only">Mongga</span>
                             <img
                                 className="h-8 w-auto sm:h-10"
                                 src="https://mongga.id/wp-content/uploads/2021/02/cropped-MONGGA-LOGO-P1.png"
-                                alt=""
+                                alt="Mongga"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
                         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
@@ -100,14 +87,19 @@ export default function Navbar() {
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                     </div>
-                    <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <Popover.Group as="nav" className="hidden md:flex space-x-16 px-10">
+                        <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Tentang Kami
-                        </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        </Link>
+                        <Link to="/aktivitas" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Aktivitas
-                        </a>
-                        <Popover className="relative">
+                        </Link>
+                        
+                        <Link to="/produk" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Produk
+                        </Link>
+
+                        {/* <Popover className="relative">
                             {({ open }) => (
                                 <>
                                     <Popover.Button
@@ -139,9 +131,9 @@ export default function Navbar() {
                                             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                                                 <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                                     {solutions.map((item) => (
-                                                        <a
+                                                        <Link
                                                             key={item.name}
-                                                            href={item.href}
+                                                            to={item.to}
                                                             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                                         >
                                                             <item.icon className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true" />
@@ -149,19 +141,19 @@ export default function Navbar() {
                                                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     ))}
                                                 </div>
                                                 <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                                                     {callsToAction.map((item) => (
                                                         <div key={item.name} className="flow-root">
-                                                            <a
-                                                                href={item.href}
+                                                            <Link
+                                                                to={item.to}
                                                                 className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
                                                             >
                                                                 <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
                                                                 <span className="ml-3">{item.name}</span>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     ))}
                                                 </div>
@@ -170,9 +162,13 @@ export default function Navbar() {
                                     </Transition>
                                 </>
                             )}
-                        </Popover>
+                        </Popover> */}
+                        
+                        <Link to="/komunitas" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Komunitas
+                        </Link>
 
-                        <Popover className="relative">
+                        {/* <Popover className="relative">
                             {({ open }) => (
                                 <>
                                     <Popover.Button
@@ -204,9 +200,9 @@ export default function Navbar() {
                                             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                                                 <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                                     {resources.map((item) => (
-                                                        <a
+                                                        <Link
                                                             key={item.name}
-                                                            href={item.href}
+                                                            to={item.to}
                                                             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                                         >
                                                             <item.icon className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true" />
@@ -214,7 +210,7 @@ export default function Navbar() {
                                                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     ))}
                                                 </div>
                                                 <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
@@ -223,18 +219,18 @@ export default function Navbar() {
                                                         <ul role="list" className="mt-4 space-y-4">
                                                             {recentPosts.map((post) => (
                                                                 <li key={post.id} className="text-base truncate">
-                                                                    <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
+                                                                    <Link to={post.to} className="font-medium text-gray-900 hover:text-gray-700">
                                                                         {post.name}
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             ))}
                                                         </ul>
                                                     </div>
                                                     <div className="mt-5 text-sm">
-                                                        <a href="#" className="font-medium text-green-600 hover:text-green-500">
+                                                        <Link to="#" className="font-medium text-green-600 hover:text-green-500">
                                                             {' '}
                                                             View all posts <span aria-hidden="true">&rarr;</span>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -242,22 +238,11 @@ export default function Navbar() {
                                     </Transition>
                                 </>
                             )}
-                        </Popover>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        </Popover> */}
+                        <Link to="/contactus" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Hubungi Kami
-                        </a>
+                        </Link>
                     </Popover.Group>
-                    <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                        <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                            Sign in
-                        </a>
-                        <a
-                            href="#"
-                            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-700 hover:bg-green-800"
-                        >
-                            Sign up
-                        </a>
-                    </div>
                 </div>
             </div>
 
@@ -277,8 +262,8 @@ export default function Navbar() {
                                 <div>
                                     <img
                                         className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-green-600.svg"
-                                        alt="Workflow"
+                                        src="https://mongga.id/wp-content/uploads/2021/02/cropped-MONGGA-LOGO-P1.png"
+                                        alt="Mongga"
                                     />
                                 </div>
                                 <div className="-mr-2">
@@ -291,50 +276,36 @@ export default function Navbar() {
                             <div className="mt-6">
                                 <nav className="grid gap-y-8">
                                     {solutions.map((item) => (
-                                        <a
+                                        <Link
                                             key={item.name}
-                                            href={item.href}
+                                            to={item.to}
                                             className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                                         >
                                             <item.icon className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true" />
                                             <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                                        </a>
+                                        </Link>
                                     ))}
                                 </nav>
                             </div>
                         </div>
                         <div className="py-6 px-5 space-y-6">
                             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <Link to="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                     Pricing
-                                </a>
+                                </Link>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <Link to="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                     Docs
-                                </a>
+                                </Link>
                                 {resources.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.name}
-                                        href={item.href}
+                                        to={item.to}
                                         className="text-base font-medium text-gray-900 hover:text-gray-700"
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 ))}
-                            </div>
-                            <div>
-                                <a
-                                    href="#"
-                                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700"
-                                >
-                                    Sign up
-                                </a>
-                                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                    Existing customer?{' '}
-                                    <a href="#" className="text-green-600 hover:text-green-500">
-                                        Sign in
-                                    </a>
-                                </p>
                             </div>
                         </div>
                     </div>

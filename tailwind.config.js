@@ -5,7 +5,12 @@ module.exports = {
     extend: {},
     fontFamily: {
       'barlow': ['"Barlow"', 'sans-serif'],
-     }
+      'poppins': ['"Poppins"', 'sans-serif'],
+    },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'darkgreen': '#093334',
+    })
   },
   variants: {
     extend: {},
