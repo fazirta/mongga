@@ -1,7 +1,6 @@
 import ButtonHijau from '../Button Hijau';
-import Grid from '../Grid';
 
-export default function Produk() {
+export default function Kompetisi() {
     return (
         <>
             <div className="px-3 py-5 xl:py-10 xl:px-0 xl:max-w-7xl mx-auto font-barlow">
@@ -9,7 +8,6 @@ export default function Produk() {
                     <ButtonHijau href="/contactus" text="Hubungi Kami" />
                     <ButtonHijau href="/contactus" text="Pelajari Selengkapnya" />
                 </div>
-                <Grid href1="/produk/kompetisi" />
             </div>
         </>
     )

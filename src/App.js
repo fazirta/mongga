@@ -11,6 +11,7 @@ import Aktivitas from './Aktivitas';
 import Produk from './Produk';
 import ContactUs from './Contact Us';
 import Komunitas from './Komunitas';
+import Kompetisi from "./Kompetisi";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Switch>
           <Route path="/aktivitas">
             <Aktivitas />
+          </Route>
+          <Route path="/produk/kompetisi">
+            <Kompetisi />
           </Route>
           <Route path="/produk">
             <Produk />
