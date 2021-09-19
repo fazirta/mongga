@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'darkgreen': '#093334',
+        'palegreen': '#4B6969',
       },
       width: {
         '132': '33rem',
