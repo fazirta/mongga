@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'darkgreen': '#093334',
         'palegreen': '#4B6969',
+        'maingreen': '#5B7D56',
       },
       width: {
         '132': '33rem',

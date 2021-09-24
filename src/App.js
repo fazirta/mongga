@@ -12,6 +12,7 @@ import Produk from './Produk';
 import ContactUs from './Contact Us';
 import Komunitas from './Komunitas';
 import Kompetisi from "./Kompetisi";
+import AboutUs from "./About Us";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/produk">
             <Produk />
+          </Route>
+          <Route path="/aboutus">
+            <AboutUs />
           </Route>
           <Route path="/contactus">
             <ContactUs />
