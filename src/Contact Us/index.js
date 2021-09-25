@@ -1,5 +1,6 @@
 import ButtonHijau from "../Button Hijau";
 import JumbotronHijau from "../Jumbotron Hijau";
+import Heading1 from "../Heading1";
 
 export default function ContactUs() {
   return (
@@ -8,12 +9,12 @@ export default function ContactUs() {
         name="Hubungi Kami"
         desc="Untuk kamu yang butuh bantuan atau mau bekerjasama dengan kami"
       />
-
-      <div className="flex items-center justify-center">
+      <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="font-poppins py-10">
-          <p className="flex items-center justify-center text-lg md:text-2xl lg:text-4xl font-bold">
-            Punya pertanyaan mengenai produk kami?
-          </p>
+          <Heading1
+            value="Punya pertanyaan mengenai produk kami?"
+            position="text-center"
+          />
           <div className="flex items-center justify-center text-sm py-6">
             <ButtonHijau href="/contactus" text="Chat melalui WA" />
           </div>
@@ -28,23 +29,16 @@ export default function ContactUs() {
             <div className="px-2"></div>
             <div className="border-4 rounded-full w-4 h-4 bg-gray-400 border-gray-400"></div>
           </div>
-          <p className="flex items-center justify-center text-lg md:text-2xl lg:text-4xl font-bold">
-            Gabung dengan komunitas kami melalui
-          </p>
-          <p className="flex items-center justify-center text-lg md:text-2xl lg:text-4xl font-bold">
-            channel kami di telegram
-          </p>
+          <Heading1
+            value="Gabung dengan komunitas kami melalui channel kami di telegram"
+            position="text-center"
+          />
+
           <div className="flex items-center justify-center text-sm py-6">
             <ButtonHijau href="/contactus" text="Gabung di telegram" />
           </div>
         </div>
       </div>
-      {/* <div className="px-3 py-5 xl:py-10 xl:px-0 xl:max-w-3xl mx-auto font-barlow">
-                <div className="flex space-x-5 my-10">
-                    <ButtonHijau href="/contactus" text="Hubungi Kami" />
-                    <ButtonHijau href="/contactus" text="Pelajari Selengkapnya" />
-                </div>
-            </div> */}
     </>
   );
 }
