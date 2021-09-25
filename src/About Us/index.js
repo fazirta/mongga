@@ -1,4 +1,5 @@
 import JumbotronHijau from "../Jumbotron Hijau";
+import Heading1 from "../Heading1";
 import hero from "../img/dasdasdassda 1.png";
 import LogoMongga from "../img/MONGGA LOGO WARNA 2.png";
 import Divider from "../img/Vector.png";
@@ -106,9 +107,7 @@ export default function AboutUs() {
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex lg:px-20 flex-wrap space-y-10 md:space-y-0 justify-center">
           <div className="flex flex-grow flex-col">
-            <h1 className="font-poppins text-4xl font-bold text-darkgreen">
-              Lebih Dekat Dengan Mongga
-            </h1>
+            <Heading1 value="Lebih Dekat Dengan Mongga" />
             <h2 className="font-poppins text-darkgreen max-w-lg mt-10">
               Mongga didirikan pada 20 Agustus 2020 oleh Awla Fajri Assalam,
               seorang pendiri dan mantan ketua organisasi Solve-IT Institut
@@ -133,9 +132,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
-        <h1 className="font-poppins text-darkgreen text-4xl font-bold text-center">
-          Tim Kami
-        </h1>
+        <Heading1 value="Tim Kami" position="text-center" />
         <div className="flex justify-center flex-wrap mt-10">
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
             <img
@@ -232,9 +229,10 @@ export default function AboutUs() {
       </div>
       <div className="my-24 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col space-y-8">
-          <h1 className="font-poppins text-darkgreen font-bold text-center text-4xl self-center">
-            Tertarik dengan Produk Kami?{" "}
-          </h1>
+          <Heading1
+            value="Tertarik dengan Produk Kami?"
+            position="text-center"
+          />
           <h2 className="font-poppins text-darkgreen text-center max-w-sm self-center">
             Jangan ragu untuk bertanya dan silahkan hubungi kami lewat tombol
             dibawah ini
