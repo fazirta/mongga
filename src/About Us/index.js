@@ -221,7 +221,7 @@ export default function AboutUs() {
               className="font-poppins text-darkgreen font-bold text-xl"
               href="#"
             >
-              Kenali Mentor Kami >
+              Kenali Mentor Kami
             </a>
             <p className="font-poppins text-darkgreen max-w-sm mt-8">
               Dengan mentor terbaik kami yang memiliki pengalaman terbaik di
