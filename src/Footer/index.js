@@ -1,18 +1,15 @@
 import React from 'react';
 import logo from '../img/MONGGA LOGO WHITE 1.png';
 import instagram from '../img/Instagram_white 1.png';
-import linkedin from '../img/LinkedIN_white 1.png';
+import Linkedin from '../img/LinkedIN_white 1.png';
 import facebook from '../img/Facebook_white 1.png';
-import {
-    Link,
-} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer>
             <div className="p-10 text-gray-200 font-barlow" style={{ backgroundColor: "#093334" }}>
                 <div className="max-w-7xl mx-auto">
-                    <Link to="/"><img src={logo} /></Link>
+                    <a href="/"><img src={logo} /></a>
                     <div className="mt-8 flex flex-col xl:flex-row xl:justify-between">
                         <div className="mb-5">
                             <h4 className="mb-3 font-bold text-lg">Produk</h4>
@@ -90,8 +87,8 @@ const Footer = () => {
                                         <a href="https://www.instagram.com/mongga_indonesia/">mongga_indonesia</a>
                                     </li>
                                     <li className="flex space-x-4 mb-3">
-                                        <img src={linkedin} className="w-7 h-7" />
-                                        <a href="https://id.linkedin.com/company/mongga-indonesia">Mongga Indonesia</a>
+                                        <img src={Linkedin} className="w-7 h-7" />
+                                        <a href="https://id.Linkedin.com/company/mongga-indonesia">Mongga Indonesia</a>
                                     </li>
                                     <li className="flex space-x-4 mb-3">
                                         <img src={facebook} className="w-7 h-7" />

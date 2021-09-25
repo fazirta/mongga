@@ -1,13 +1,13 @@
 import {
-    Link,
+    a,
 } from "react-router-dom";
 
 export default function Jumbotron(props) {
     return (
         <>
-            <Link to={props.href}>
+            <a href={props.href}>
                 <img src={props.src} alt="" />
-            </Link>
+            </a>
         </>
     )
 }
