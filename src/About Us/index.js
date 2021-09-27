@@ -1,5 +1,6 @@
 import JumbotronHijau from "../Jumbotron Hijau";
-import hero from "../img/dasdasdassda 1.png";
+import Heading1 from "../Heading1";
+import Paragraph1 from "../Paragraph1";
 import LogoMongga from "../img/MONGGA LOGO WARNA 2.png";
 import Divider from "../img/Vector.png";
 import Teacher1 from "../img/teacher 1.png";
@@ -34,29 +35,30 @@ export default function AboutUs() {
           <img className="w-60 lg:w-auto" src={LogoMongga} />
         </div>
         <div className="flex justify-center align-center my-10">
-          <p className="font-poppins text-center md:px-32 xl:px-52 text-darkgreen">
-            Mongga merupakan sebuah badan usaha yang bergerak pada bidang
+          <Paragraph1
+            value="Mongga merupakan sebuah badan usaha yang bergerak pada bidang
             pendidikan siswa dan mahasiswa. Mongga memberikan pelayanan berupa
             pelatihan dan konsultasi berkualitas dari berbagai disiplin ilmu,
             pengembangan platform belajar, serta pembangunan komunitas belajar
             guna meningkatkan lingkungan belajar dengan minat yang tinggi dan
-            daya saing yang kompetitif.
-          </p>
+            daya saing yang kompetitif."
+            position="text-center md:px-32 xl:px-52"
+          />
         </div>
       </div>
       <div className="bg-darkgreen">
         <div className="my-20 px-3 py-14 max-w-7xl mx-auto">
           <div>
-            <h1 className="font-poppins text-white text-center font-light text-4xl">
+            <h1 className="font-poppins text-white text-center font-bold text-4xl">
               Visi Mongga
             </h1>
-            <h1 className="font-poppins text-white text-center font-bold text-xl mt-10">
+            <h1 className="font-poppins text-white text-center font-light text-xl mt-10">
               Membangun Ekosistem Inovasi dan Menghilangkan Eksklusivitas
               Pendidikan
             </h1>
           </div>
           <div className="mt-20">
-            <h1 className="font-poppins text-white text-center font-light text-4xl">
+            <h1 className="font-poppins text-white text-center font-bold text-4xl">
               Misi Mongga
             </h1>
             <div className="flex flex-wrap justify-center align-center">
@@ -65,7 +67,7 @@ export default function AboutUs() {
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Teacher1}
                 />
-                <h1 className="font-poppins text-white font-semibold self-center">
+                <h1 className="font-poppins text-white font-light self-center">
                   Menciptakan platform peningkatan skill multi-disiplin yang
                   berkualitas
                 </h1>
@@ -75,7 +77,7 @@ export default function AboutUs() {
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Competence1}
                 />
-                <h1 className="font-poppins text-white font-semibold self-center">
+                <h1 className="font-poppins text-white font-light self-center">
                   Memberikan layanan pelatihan dan konsultasi berbagai disiplin
                   ilmu kepada akademisi
                 </h1>
@@ -85,7 +87,7 @@ export default function AboutUs() {
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Conversation1}
                 />
-                <h1 className="font-poppins text-white font-semibold self-center">
+                <h1 className="font-poppins text-white font-light self-center">
                   Menciptakan wadah komunikasi multi-disiplin tingkat nasional
                 </h1>
               </div>
@@ -94,7 +96,7 @@ export default function AboutUs() {
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Overpopulation1}
                 />
-                <h1 className="font-poppins text-white font-semibold self-center">
+                <h1 className="font-poppins text-white font-light self-center">
                   Menghilangkan kesenjangan wawasan akan teknologi pada
                   akademisi serta praktisi{" "}
                 </h1>
@@ -106,9 +108,7 @@ export default function AboutUs() {
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex lg:px-20 flex-wrap space-y-10 md:space-y-0 justify-center">
           <div className="flex flex-grow flex-col">
-            <h1 className="font-poppins text-4xl font-bold text-darkgreen">
-              Lebih Dekat Dengan Mongga
-            </h1>
+            <Heading1 value="Lebih Dekat Dengan Mongga" />
             <h2 className="font-poppins text-darkgreen max-w-lg mt-10">
               Mongga didirikan pada 20 Agustus 2020 oleh Awla Fajri Assalam,
               seorang pendiri dan mantan ketua organisasi Solve-IT Institut
@@ -133,9 +133,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
-        <h1 className="font-poppins text-darkgreen text-4xl font-bold text-center">
-          Tim Kami
-        </h1>
+        <Heading1 value="Tim Kami" position="text-center" />
         <div className="flex justify-center flex-wrap mt-10">
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
             <img
@@ -221,7 +219,7 @@ export default function AboutUs() {
               className="font-poppins text-darkgreen font-bold text-xl"
               href="#"
             >
-              Kenali Mentor Kami >
+              Kenali Mentor Kami
             </a>
             <p className="font-poppins text-darkgreen max-w-sm mt-8">
               Dengan mentor terbaik kami yang memiliki pengalaman terbaik di
@@ -232,9 +230,10 @@ export default function AboutUs() {
       </div>
       <div className="my-24 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col space-y-8">
-          <h1 className="font-poppins text-darkgreen font-bold text-center text-4xl self-center">
-            Tertarik dengan Produk Kami?{" "}
-          </h1>
+          <Heading1
+            value="Tertarik dengan Produk Kami?"
+            position="text-center"
+          />
           <h2 className="font-poppins text-darkgreen text-center max-w-sm self-center">
             Jangan ragu untuk bertanya dan silahkan hubungi kami lewat tombol
             dibawah ini

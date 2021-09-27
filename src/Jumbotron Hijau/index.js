@@ -8,10 +8,10 @@ export default function JumbotronHijau(props) {
           <div className="px-3 max-w-7xl absolute w-full h-full flex justify-start align-center">
             <div className="flex-1 flex flex-col justify-center">
               <div className="mx-auto">
-                <h1 className="font-poppins text-white text-xl md:text-3xl xl:text-7xl font-bold mb-5">
+                <h1 className="font-poppins text-white text-xl md:text-3xl lg:text-5xl font-bold mb-5">
                   {props.name}
                 </h1>
-                <h2 className="font-poppins text-white text-sm md:text-xl xl:text-4xl font-light">
+                <h2 className="font-poppins text-white text-sm md:text-xl lg:text-2xl font-light">
                   {props.desc}
                 </h2>
               </div>
