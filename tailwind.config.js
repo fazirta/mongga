@@ -7,6 +7,7 @@ module.exports = {
         darkgreen: "#093334",
         palegreen: "#4B6969",
         maingreen: "#5B7D56",
+        monggagrey: "#D2D8CE",
       },
       width: {
         132: "33rem",
