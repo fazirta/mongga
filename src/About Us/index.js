@@ -42,7 +42,7 @@ export default function AboutUs() {
             pengembangan platform belajar, serta pembangunan komunitas belajar
             guna meningkatkan lingkungan belajar dengan minat yang tinggi dan
             daya saing yang kompetitif."
-            position="text-center"
+            position="text-center md:px-32 xl:px-52"
           />
         </div>
       </div>

@@ -3,7 +3,7 @@ export default function Heading1(props) {
     <>
       <h1
         className={[
-          "font-poppins text-4xl font-bold text-darkgreen",
+          "font-poppins text-2xl md:text-4xl font-bold text-darkgreen",
           props.position,
         ].join(" ")}
       >
