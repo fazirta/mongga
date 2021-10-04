@@ -26,6 +26,9 @@ import programminggames from "../img/programming games.png";
 import desaingrafis from "../img/desain grafis.png";
 import videografi from "../img/videografi.png";
 import seminarmotivasi from "../img/seminar motivasi.png";
+import Group230 from "../img/Group 230.png";
+import Group231 from "../img/Group 231.png";
+import Group232 from "../img/Group 232.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -218,6 +221,47 @@ export default function LandingPage() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
+            </div>
+            <div className="my-10 pt-10 pb-1 px-3 md:px-10 xl:px-20 max-w-7xl mx-auto">
+                <div className="flex justify-center">
+                    <h1 className="text-darkgreen font-bold text-4xl font-poppins">Apa kata mereka?</h1>
+                </div>
+                <Swiper
+                    className="max-w-full my-10"
+                    spaceBetween={0}
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1080: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    <SwiperSlide>
+                        <div className="flex justify-center align-center h-full">
+                            <img src={Group230} className="self-center w-72 md:w-auto" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center align-center h-full">
+                            <img src={Group231} className="self-center w-72 md:w-auto" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center align-center h-full">
+                            <img src={Group232} className="self-center w-72 md:w-auto" />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </>
     )
