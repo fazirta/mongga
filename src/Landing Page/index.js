@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import ButtonHijau from '../Button Hijau';
 import CardPersegi from '../Card Persegi';
+import Heading1 from "../Heading1";
 import CardPersegiPanjang from '../Card Persegi Panjang';
 import Jumbotron from '../Jumbotron';
 import hero from '../img/NEWLAND 6.png';
@@ -29,6 +30,15 @@ import seminarmotivasi from "../img/seminar motivasi.png";
 import Group230 from "../img/Group 230.png";
 import Group231 from "../img/Group 231.png";
 import Group232 from "../img/Group 232.png";
+import sman11jakarta from "../img/sman 11 jakarta.png";
+import Group194 from "../img/Group 194.png";
+import image_1 from "../img/image-1.png";
+import sman29jakartaremovebgpreview1 from "../img/sman_29_jakarta-removebg-preview 1.png";
+import image2 from "../img/image2.png";
+import image1 from "../img/image1.png";
+import image3 from "../img/image-3.png";
+import image_2 from "../img/image-2.png";
+import image from "../img/image.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -262,6 +272,58 @@ export default function LandingPage() {
                         </div>
                     </SwiperSlide>
                 </Swiper>
+            </div>
+            <div className="my-10 px-3 py-16 bg-darkgreen">
+                <div className="flex justify-center">
+                    <h1 className="text-white font-bold text-xl font-poppins border-b-4 border-yellow-400 pb-2">Mitra yang Telah Bekerja Sama</h1>
+                </div>
+                <div className="max-w-7xl mx-auto mt-10">
+                    <div className="flex max-w-5xl flex-wrap mx-auto justify-center">
+                        <div className="p-4 md:p-8">
+                            <img src={sman11jakarta} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={Group194} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image_1} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={sman29jakartaremovebgpreview1} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image2} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image1} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image3} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image_2} />
+                        </div>
+                        <div className="p-4 md:p-8">
+                            <img src={image} />
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-5">
+                    <h1 className="font-bold text-gray-500 font-poppins text-xl text-center">Dan masih banyak lagi!</h1>
+                </div>
+            </div>
+            <div className="my-24 px-3 max-w-7xl mx-auto">
+                <div className="flex flex-col space-y-8">
+                    <Heading1
+                        value="Tertarik dengan Produk Kami?"
+                        position="text-center"
+                    />
+                    <h2 className="font-poppins text-darkgreen text-center max-w-sm self-center">
+                        Jangan ragu untuk bertanya dan silahkan hubungi kami lewat tombol
+                        dibawah ini
+                    </h2>
+                    <ButtonHijau href="/contactus" text="Hubungi Kami" />
+                </div>
             </div>
         </>
     )
