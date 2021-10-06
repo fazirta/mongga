@@ -38,7 +38,7 @@ const solutions = [
   {
     name: "Komunitas",
     description: "Connect with third-party tools that you're already using.",
-    href: "/komunitas",
+    href: "https://t.me/joinchat/-FYL91EUszBmZGQ1",
     icon: UserGroupIcon,
   },
   {
