@@ -5,7 +5,7 @@ import {
 export default function CardPersegi(props) {
     return (
         <>
-            <a href={props.href}>
+            <a href={props.href} style={{ backgroundColor: '#F8F8F8' }}>
                 <div className="flex flex-col justify-around shadow-lg w-80 h-80 rounded-xl font-poppins">
                     <img className="w-full max-h-52 object-cover rounded-t-xl" src={props.src} alt={props.title} />
                     <div className="flex items-center justify-center p-4 text-gray-800 text-lg font-semibold">
