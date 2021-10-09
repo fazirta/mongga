@@ -10,7 +10,6 @@ import hero from '../img/NEWLAND 6.png';
 import online from '../img/online gr 1.png';
 import leader from '../img/leader 1.png';
 import crowd from '../img/crowd 1.png';
-import group193 from '../img/Group 193.png';
 import Component24 from '../img/Component 24.png';
 import Component21 from '../img/Component 21.png';
 import Component22 from '../img/Component 22.png';
@@ -57,7 +56,12 @@ export default function LandingPage() {
                 </div>
             </div>
             <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
-                <img src={group193} className="max-h-20 md:max-h-24 mx-auto" />
+                <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
+                    <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
+                        <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
+                    </div>
+                    <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
+                </div>
             </div>
             <div className="relative mt-20">
                 <div className="flex justify-center">
