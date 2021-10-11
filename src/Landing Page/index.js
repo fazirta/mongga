@@ -104,6 +104,7 @@ export default function LandingPage() {
               navigation={true}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
+              autoplay={true}
             >
               <SwiperSlide>
                 <CardPersegi title="Olimpiade" src={Group233}></CardPersegi>
@@ -145,6 +146,7 @@ export default function LandingPage() {
               slidesPerView: 3,
             },
           }}
+          autoplay={true}
         >
           <SwiperSlide>
             <CardPersegi title="Robotik" src={Group236}></CardPersegi>
@@ -224,6 +226,7 @@ export default function LandingPage() {
                 slidesPerView: 3,
               },
             }}
+            autoplay={true}
           >
             <SwiperSlide>
               <div className="flex justify-center align-center h-full">
@@ -277,6 +280,7 @@ export default function LandingPage() {
               slidesPerView: 3,
             },
           }}
+          autoplay={true}
         >
           <SwiperSlide>
             <div className="flex justify-center align-center h-full">
