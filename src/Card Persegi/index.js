@@ -5,11 +5,14 @@ import {
 export default function CardPersegi(props) {
     return (
         <>
-            <a href={props.href} style={{ backgroundColor: '#F8F8F8' }}>
-                <div className="flex flex-col justify-around shadow-lg w-80 h-80 rounded-xl font-poppins">
-                    <img className="w-full max-h-52 object-cover rounded-t-xl" src={props.src} alt={props.title} />
-                    <div className="flex items-center justify-center p-4 text-gray-800 text-lg font-semibold">
-                        {props.title}
+            <a href={props.href}>
+                <div className="inline flex h-full">
+                    <div className="self-center mx-auto w-48 h-48 xl:w-72 xl:h-72 2xl:w-80 2xl:h-80 flex flex-col justify-center rounded-2xl xl:rounded-3xl shadow-xl m-16" style={{ background: "#F8F8F8" }}>
+                        <img
+                            src={props.src} alt={props.title}
+                            className="self-center mx-auto w-20 xl:w-36"
+                        />
+                        <h1 className="text-center text-md xl:text-2xl mt-5 xl:mt-10 text-darkgreen">{props.title}</h1>
                     </div>
                 </div>
             </a>

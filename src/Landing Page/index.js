@@ -11,21 +11,10 @@ import online from '../img/online gr 1.png';
 import leader from '../img/leader 1.png';
 import crowd from '../img/crowd 1.png';
 import Component24 from '../img/Component 24.png';
-import Component21 from '../img/Component 21.png';
-import Component22 from '../img/Component 22.png';
-import Component23 from '../img/Component 23.png';
 import student5540227_19201 from "../img/student-5540227_1920 1.png";
 import Group173 from "../img/Group 173.png";
 import Group174 from "../img/Group 174.png";
 import Group175 from "../img/Group 175.png";
-import robotik from "../img/robotik.png";
-import datascience from "../img/data science.png";
-import programmingwebsite from "../img/programming website.png";
-import programmingandroid from "../img/programming android.png";
-import programminggames from "../img/programming games.png";
-import desaingrafis from "../img/desain grafis.png";
-import videografi from "../img/videografi.png";
-import seminarmotivasi from "../img/seminar motivasi.png";
 import Group230 from "../img/Group 230.png";
 import Group231 from "../img/Group 231.png";
 import Group232 from "../img/Group 232.png";
@@ -38,6 +27,17 @@ import image1 from "../img/image1.png";
 import image3 from "../img/image-3.png";
 import image_2 from "../img/image-2.png";
 import image from "../img/image.png";
+import Group233 from "../img/Group 233.png";
+import Group234 from "../img/Group 234.png";
+import Group235 from "../img/Group 235.png";
+import Group236 from "../img/Group 236.png";
+import Group237 from "../img/Group 237.png";
+import Group238 from "../img/Group 238.png";
+import Group239 from "../img/Group 239.png";
+import Group240 from "../img/Group 240.png";
+import Group241 from "../img/Group 241.png";
+import Group242 from "../img/Group 242.png";
+import Group243 from "../img/Group 243.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -71,15 +71,15 @@ export default function LandingPage() {
             href="/aktivitas"
           />
         </div>
-      </div>      
+      </div>
       <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
-                <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
-                    <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
-                        <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
-                    </div>
-                    <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
-                </div>
-            </div>
+        <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
+          <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
+            <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
+          </div>
+          <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
+        </div>
+      </div>
       <div className="relative mt-20">
         <div className="flex justify-center">
           <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row flex-row align-center">
@@ -106,28 +106,13 @@ export default function LandingPage() {
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component21}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Olimpiade" src={Group233}></CardPersegi>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component22}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Riset" src={Group234}></CardPersegi>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component23}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Bahasa" src={Group235}></CardPersegi>
               </SwiperSlide>
             </Swiper>
           </div>
@@ -145,7 +130,7 @@ export default function LandingPage() {
           </h1>
         </div>
         <Swiper
-          className="max-w-full my-10"
+          className="max-w-full"
           spaceBetween={0}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -162,51 +147,28 @@ export default function LandingPage() {
           }}
         >
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={robotik} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Robotik" src={Group236}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programmingwebsite}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Data Science" src={Group237}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programmingandroid}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Programming Website" src={Group238}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programminggames}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Programming Android" src={Group239}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={desaingrafis} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Programming Games" src={Group240}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={videografi} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Desain Grafis" src={Group241}></CardPersegi>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={seminarmotivasi}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Videografi" src={Group242}></CardPersegi>
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardPersegi title="Seminar Motivasi" src={Group243}></CardPersegi>
           </SwiperSlide>
         </Swiper>
         <ButtonHijau href="/produk" text="Pelajari Selengkapnya" />
