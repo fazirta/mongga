@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
+import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
 import CardPersegiPanjang from '../Card Persegi Panjang';
 import Jumbotron from '../Jumbotron';
@@ -15,9 +16,6 @@ import student5540227_19201 from "../img/student-5540227_1920 1.png";
 import Group173 from "../img/Group 173.png";
 import Group174 from "../img/Group 174.png";
 import Group175 from "../img/Group 175.png";
-import Group230 from "../img/Group 230.png";
-import Group231 from "../img/Group 231.png";
-import Group232 from "../img/Group 232.png";
 import sman11jakarta from "../img/sman 11 jakarta.png";
 import Group194 from "../img/Group 194.png";
 import image_1 from "../img/image-1.png";
@@ -38,6 +36,9 @@ import Group240 from "../img/Group 240.png";
 import Group241 from "../img/Group 241.png";
 import Group242 from "../img/Group 242.png";
 import Group243 from "../img/Group 243.png";
+import asdasd1 from "../img/asdasd 1.png";
+import dafbmm1 from "../img/dafbmm 1.png";
+import Group199 from "../img/Group 199.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -283,19 +284,13 @@ export default function LandingPage() {
           autoplay={true}
         >
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group230} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={asdasd1} name="Narga Naraya Andono" course="Kelas Videografi" review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group231} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={Group199} name="Dafina Farah Fatima" course="Kelas Programming" review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group232} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={dafbmm1} name="Balya Elfata" course="Kelas Videografi" review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“" />
           </SwiperSlide>
         </Swiper>
       </div>
