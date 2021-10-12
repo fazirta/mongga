@@ -187,7 +187,7 @@ export default function Navbar() {
                         </Popover> */}
 
             <a
-              href="/komunitas"
+              href="https://t.me/joinchat/-FYL91EUszBmZGQ1"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Komunitas
