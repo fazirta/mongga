@@ -107,13 +107,13 @@ export default function LandingPage() {
               autoplay={true}
             >
               <SwiperSlide>
-                <CardPersegi title="Olimpiade" src={Group233}></CardPersegi>
+                <CardPersegi title="Olimpiade" src={Group233} />
               </SwiperSlide>
               <SwiperSlide>
-                <CardPersegi title="Riset" src={Group234}></CardPersegi>
+                <CardPersegi title="Riset" src={Group234} />
               </SwiperSlide>
               <SwiperSlide>
-                <CardPersegi title="Bahasa" src={Group235}></CardPersegi>
+                <CardPersegi title="Bahasa" src={Group235} />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -149,28 +149,28 @@ export default function LandingPage() {
           autoplay={true}
         >
           <SwiperSlide>
-            <CardPersegi title="Robotik" src={Group236}></CardPersegi>
+            <CardPersegi title="Robotik" src={Group236} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Data Science" src={Group237}></CardPersegi>
+            <CardPersegi title="Data Science" src={Group237} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Programming Website" src={Group238}></CardPersegi>
+            <CardPersegi title="Programming Website" src={Group238} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Programming Android" src={Group239}></CardPersegi>
+            <CardPersegi title="Programming Android" src={Group239} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Programming Games" src={Group240}></CardPersegi>
+            <CardPersegi title="Programming Games" src={Group240} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Desain Grafis" src={Group241}></CardPersegi>
+            <CardPersegi title="Desain Grafis" src={Group241} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Videografi" src={Group242}></CardPersegi>
+            <CardPersegi title="Videografi" src={Group242} />
           </SwiperSlide>
           <SwiperSlide>
-            <CardPersegi title="Seminar Motivasi" src={Group243}></CardPersegi>
+            <CardPersegi title="Seminar Motivasi" src={Group243} />
           </SwiperSlide>
         </Swiper>
         <ButtonHijau href="/produk" text="Pelajari Selengkapnya" />
