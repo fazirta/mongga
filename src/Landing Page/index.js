@@ -3,33 +3,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
+import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
-import CardPersegiPanjang from "../Card Persegi Panjang";
-import Jumbotron from "../Jumbotron";
-import hero from "../img/NEWLAND 6.png";
-import online from "../img/online gr 1.png";
-import leader from "../img/leader 1.png";
-import crowd from "../img/crowd 1.png";
-import group193 from "../img/Group 193.png";
-import Component24 from "../img/Component 24.png";
-import Component21 from "../img/Component 21.png";
-import Component22 from "../img/Component 22.png";
-import Component23 from "../img/Component 23.png";
+import CardPersegiPanjang from '../Card Persegi Panjang';
+import Jumbotron from '../Jumbotron';
+import hero from '../img/NEWLAND 6.png';
+import online from '../img/online gr 1.png';
+import leader from '../img/leader 1.png';
+import crowd from '../img/crowd 1.png';
+import Component24 from '../img/Component 24.png';
 import student5540227_19201 from "../img/student-5540227_1920 1.png";
 import Group173 from "../img/Group 173.png";
 import Group174 from "../img/Group 174.png";
 import Group175 from "../img/Group 175.png";
-import robotik from "../img/robotik.png";
-import datascience from "../img/data science.png";
-import programmingwebsite from "../img/programming website.png";
-import programmingandroid from "../img/programming android.png";
-import programminggames from "../img/programming games.png";
-import desaingrafis from "../img/desain grafis.png";
-import videografi from "../img/videografi.png";
-import seminarmotivasi from "../img/seminar motivasi.png";
-import Group230 from "../img/Group 230.png";
-import Group231 from "../img/Group 231.png";
-import Group232 from "../img/Group 232.png";
 import sman11jakarta from "../img/sman 11 jakarta.png";
 import Group194 from "../img/Group 194.png";
 import image_1 from "../img/image-1.png";
@@ -39,6 +25,20 @@ import image1 from "../img/image1.png";
 import image3 from "../img/image-3.png";
 import image_2 from "../img/image-2.png";
 import image from "../img/image.png";
+import Group233 from "../img/Group 233.png";
+import Group234 from "../img/Group 234.png";
+import Group235 from "../img/Group 235.png";
+import Group236 from "../img/Group 236.png";
+import Group237 from "../img/Group 237.png";
+import Group238 from "../img/Group 238.png";
+import Group239 from "../img/Group 239.png";
+import Group240 from "../img/Group 240.png";
+import Group241 from "../img/Group 241.png";
+import Group242 from "../img/Group 242.png";
+import Group243 from "../img/Group 243.png";
+import asdasd1 from "../img/asdasd 1.png";
+import dafbmm1 from "../img/dafbmm 1.png";
+import Group199 from "../img/Group 199.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -74,7 +74,12 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
-        <img src={group193} className="max-h-20 md:max-h-24 mx-auto" />
+        <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
+          <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
+            <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
+          </div>
+          <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
+        </div>
       </div>
       <div className="relative mt-20">
         <div className="flex justify-center">
@@ -100,30 +105,16 @@ export default function LandingPage() {
               navigation={true}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
+              autoplay={true}
             >
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component21}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Olimpiade" src={Group233} />
               </SwiperSlide>
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component22}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Riset" src={Group234} />
               </SwiperSlide>
               <SwiperSlide>
-                <div className="inline lg:flex h-full">
-                  <img
-                    src={Component23}
-                    className="self-center mx-auto max-h-full"
-                  />
-                </div>
+                <CardPersegi title="Bahasa" src={Group235} />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -141,7 +132,7 @@ export default function LandingPage() {
           </h1>
         </div>
         <Swiper
-          className="max-w-full my-10"
+          className="max-w-full"
           spaceBetween={0}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -156,58 +147,31 @@ export default function LandingPage() {
               slidesPerView: 3,
             },
           }}
+          autoplay={true}
         >
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={robotik} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Robotik" src={Group236} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={datascience} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Data Science" src={Group237} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programmingwebsite}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Programming Website" src={Group238} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programmingandroid}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Programming Android" src={Group239} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={programminggames}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Programming Games" src={Group240} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={desaingrafis} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Desain Grafis" src={Group241} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={videografi} className="self-center w-64 lg:w-auto" />
-            </div>
+            <CardPersegi title="Videografi" src={Group242} />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img
-                src={seminarmotivasi}
-                className="self-center w-64 lg:w-auto"
-              />
-            </div>
+            <CardPersegi title="Seminar Motivasi" src={Group243} />
           </SwiperSlide>
         </Swiper>
         <ButtonHijau href="/produk" text="Pelajari Selengkapnya" />
@@ -263,6 +227,7 @@ export default function LandingPage() {
                 slidesPerView: 3,
               },
             }}
+            autoplay={true}
           >
             <SwiperSlide>
               <div className="flex justify-center align-center h-full">
@@ -316,21 +281,16 @@ export default function LandingPage() {
               slidesPerView: 3,
             },
           }}
+          autoplay={true}
         >
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group230} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={asdasd1} name="Narga Naraya Andono" course="Kelas Videografi" review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group231} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={Group199} name="Dafina Farah Fatima" course="Kelas Programming" review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center align-center h-full">
-              <img src={Group232} className="self-center w-72 md:w-auto" />
-            </div>
+            <CardReview src={dafbmm1} name="Balya Elfata" course="Kelas Videografi" review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“" />
           </SwiperSlide>
         </Swiper>
       </div>
