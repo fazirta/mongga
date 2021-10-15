@@ -20,7 +20,7 @@ export default function Aktivitas() {
     return (
         <>
             <div className="my-20 px-3 max-w-7x1 mx-auto">
-                <div className="font-poppins py-5">
+                <div className="font-poppins py-5 text-center sm:text-left">
                     <Heading1
                         value="KEGIATAN KAMI"
                         position="text-center"
@@ -29,11 +29,11 @@ export default function Aktivitas() {
                         Intip kegiatan yang telah dilakukan oleh Mongga
                     </p>
                 </div>
-                <div className="p-10 text-gray-200 font-barlow" style={{ backgroundColor: "#093334" }}>
+                <div className="p-10 text-gray-200 font-barlow text-center sm:text-left md:max-w-2xl" style={{ backgroundColor: "#093334" }}>
                     {/* <h2 className="font-poppins text-2xl md:text-3xl font-bold text-white text-center">
                         Apprenticeship
                     </h2> */}
-                    <Swiper
+                    <Swiper className="md:flex"
                         // spaceBetween={40}
                         slidesPerView={3}
                         slidesPerGroup={3}
@@ -127,7 +127,7 @@ export default function Aktivitas() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <div className="font-poppins py-10">
+                <div className="font-poppins py-10 text-center sm:text-left">
                     <Heading1
                         value="Tertarik dengan Produk Kami?"
                         position="text-center"
