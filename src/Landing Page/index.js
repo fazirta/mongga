@@ -13,9 +13,6 @@ import leader from '../img/leader 1.png';
 import crowd from '../img/crowd 1.png';
 import Component24 from '../img/Component 24.png';
 import student5540227_19201 from "../img/student-5540227_1920 1.png";
-import Group173 from "../img/Group 173.png";
-import Group174 from "../img/Group 174.png";
-import Group175 from "../img/Group 175.png";
 import sman11jakarta from "../img/sman 11 jakarta.png";
 import Group194 from "../img/Group 194.png";
 import image_1 from "../img/image-1.png";
@@ -39,6 +36,9 @@ import Group243 from "../img/Group 243.png";
 import asdasd1 from "../img/asdasd 1.png";
 import dafbmm1 from "../img/dafbmm 1.png";
 import Group199 from "../img/Group 199.png";
+import img263684 from "../img/263684.png";
+import img263686 from "../img/263686.png";
+import img263699 from "../img/263699.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -222,35 +222,42 @@ export default function LandingPage() {
               640: {
                 slidesPerView: 1,
               },
-              // when window width is >= 768px
-              768: {
+              // when window width is >= 1024px
+              1024: {
+                slidesPerView: 2,
+              },
+              // when window width is >= 1280px
+              1280: {
                 slidesPerView: 3,
               },
             }}
             autoplay={true}
           >
             <SwiperSlide>
-              <div className="flex justify-center align-center h-full">
+              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
                 <img
-                  src={Group173}
-                  className="self-center max-h-full max-w-full"
+                  src={img263699}
+                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
                 />
+                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex justify-center align-center h-full">
+              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
                 <img
-                  src={Group174}
-                  className="self-center max-h-full max-w-full"
+                  src={img263686}
+                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
                 />
+                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex justify-center align-center h-full">
+              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
                 <img
-                  src={Group175}
-                  className="self-center max-h-full max-w-full"
+                  src={img263684}
+                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
                 />
+                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
               </div>
             </SwiperSlide>
           </Swiper>
