@@ -39,6 +39,7 @@ import Group199 from "../img/Group 199.png";
 import img263684 from "../img/263684.png";
 import img263686 from "../img/263686.png";
 import img263699 from "../img/263699.png";
+import GambarAktivitas from "../Gambar Aktivitas";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -234,31 +235,13 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
-                <img
-                  src={img263699}
-                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
-                />
-                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
-              </div>
+              <GambarAktivitas src={img263699}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
-                <img
-                  src={img263686}
-                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
-                />
-                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
-              </div>
+              <GambarAktivitas src={img263686}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative h-44 w-80 lg:h-56 lg:w-96 mx-auto">
-                <img
-                  src={img263684}
-                  className="z-50 absolute top-0 left-0 h-full w-full pb-4 pr-4 lg:pb-8 lg:pr-8"
-                />
-                <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
-              </div>
+              <GambarAktivitas src={img263684}/>
             </SwiperSlide>
           </Swiper>
         </div>
