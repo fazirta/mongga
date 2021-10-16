@@ -2,17 +2,19 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
-import Footer from './Footer';
-import Navbar from './Navbar';
-import LandingPage from './Landing Page';
-import Aktivitas from './Aktivitas';
-import Produk from './Produk';
-import ContactUs from './Contact Us';
-import Komunitas from './Komunitas';
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import LandingPage from "./Landing Page";
+import Aktivitas from "./Aktivitas";
+import Produk from "./Produk";
+import ContactUs from "./Contact Us";
+import Komunitas from "./Komunitas";
 import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
+import Mentor from "./Mentor";
+import Testimoni from "./Testimoni";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+          <Route path="/testimoni">
+            <Testimoni />
+          </Route>
+          <Route path="/mentor">
+            <Mentor />
+          </Route>
           <Route path="/aktivitas">
             <Aktivitas />
           </Route>
@@ -39,7 +47,7 @@ function App() {
             <Komunitas />
           </Route>
           <Route path="/">
-            <LandingPage/>
+            <LandingPage />
           </Route>
         </Switch>
         <Footer />
