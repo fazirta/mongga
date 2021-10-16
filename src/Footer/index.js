@@ -20,46 +20,22 @@ const Footer = () => {
               <h4 className="mb-3 font-bold text-lg">Produk</h4>
               <div className="flex flex-col lg:flex-row lg:space-x-20">
                 <ul className="flex-none">
-                  <li className="mb-1">
-                    <a href="#">Olimpiade</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Riset</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Bahasa</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Robotik</a>
-                  </li>
+                  <li className="mb-1">Olimpiade</li>
+                  <li className="mb-1">Riset</li>
+                  <li className="mb-1">Bahasa</li>
+                  <li className="mb-1">Robotik</li>
                 </ul>
                 <ul className="flex-none">
-                  <li className="mb-1">
-                    <a href="#">Data Science</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Programming Website </a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Programming Android</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Programming Games</a>
-                  </li>
+                  <li className="mb-1">Data Science</li>
+                  <li className="mb-1">Programming Website</li>
+                  <li className="mb-1">Programming Android</li>
+                  <li className="mb-1">Programming Games</li>
                 </ul>
                 <ul className="flex-none">
-                  <li className="mb-1">
-                    <a href="#">Desain Grafis</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Videografi</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Seminar Motivasi</a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="#">Study Abroad</a>
-                  </li>
+                  <li className="mb-1">Desain Grafis</li>
+                  <li className="mb-1">Videografi</li>
+                  <li className="mb-1">Seminar Motivasi</li>
+                  <li className="mb-1">Study Abroad</li>
                 </ul>
               </div>
             </div>
@@ -68,16 +44,16 @@ const Footer = () => {
               <div className="flex flex-col lg:flex-row lg:space-x-20">
                 <ul className="flex-none">
                   <li className="mb-1">
-                    <a href="#">Tentang Kami</a>
+                    <a href="/about-us">Tentang Kami</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#">Mentor Kami</a>
+                    <a href="/mentor">Mentor Kami</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#">Aktivitas</a>
+                    <a href="/aktivitas">Aktivitas</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#">Testimoni</a>
+                    <a href="/testimoni">Testimoni</a>
                   </li>
                 </ul>
               </div>
