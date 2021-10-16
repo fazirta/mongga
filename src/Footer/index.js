@@ -68,13 +68,13 @@ const Footer = () => {
               <div className="flex flex-col lg:flex-row lg:space-x-20">
                 <ul className="flex-none">
                   <li className="mb-1">
-                    <a href="#">Tentang Kami</a>
+                    <a href="/about-us">Tentang Kami</a>
                   </li>
                   <li className="mb-1">
                     <a href="#">Mentor Kami</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#">Aktivitas</a>
+                    <a href="/aktivitas">Aktivitas</a>
                   </li>
                   <li className="mb-1">
                     <a href="#">Testimoni</a>
