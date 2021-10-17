@@ -1,10 +1,24 @@
 import ButtonHijau from "../Button Hijau";
 import Heading1 from "../Heading1";
-
+import Paragraph1 from "../Paragraph1";
+import JumbotronHijau from "../Jumbotron Hijau";
 
 export default function Mentor() {
   return (
     <>
+      <JumbotronHijau name="Mentor Kami" desc="Membantu menggapai impianmu" />
+
+      {/* header */}
+      <div className="my-24">
+        <Heading1 value="MENTOR MONGGA" position="text-center" />
+        <div className="flex justify-center">
+          <Paragraph1
+            value="Dengan mentor terbaik kami yang memiliki pengalaman terbaik di bidangnya, kami dapat memberikan kelas yang bermutu."
+            position="text-center max-w-xl"
+          />
+        </div>
+      </div>
+
       <div className="my-24 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col space-y-8">
           <Heading1

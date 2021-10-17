@@ -5,13 +5,13 @@ import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
 import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
-import CardPersegiPanjang from '../Card Persegi Panjang';
-import Jumbotron from '../Jumbotron';
-import hero from '../img/NEWLAND 6.png';
-import online from '../img/online gr 1.png';
-import leader from '../img/leader 1.png';
-import crowd from '../img/crowd 1.png';
-import Component24 from '../img/Component 24.png';
+import CardPersegiPanjang from "../Card Persegi Panjang";
+import Jumbotron from "../Jumbotron";
+import hero from "../img/NEWLAND 6.png";
+import online from "../img/online gr 1.png";
+import leader from "../img/leader 1.png";
+import crowd from "../img/crowd 1.png";
+import Component24 from "../img/Component 24.png";
 import student5540227_19201 from "../img/student-5540227_1920 1.png";
 import Group173 from "../img/Group 173.png";
 import Group174 from "../img/Group 174.png";
@@ -63,20 +63,22 @@ export default function LandingPage() {
             title="Mentor Berpengalaman dan Berkualitas di bidangnya"
             link="Mentor Kami >"
             src={leader}
-            href="/aktivitas"
+            href="/mentor"
           />
           <CardPersegiPanjang
             title="Telah digunakan dan dibuktikan oleh banyak orang"
             link="Testimoni >"
             src={crowd}
-            href="/aktivitas"
+            href="/testimoni"
           />
         </div>
       </div>
       <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
         <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
           <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
-            <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
+            <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">
+              Temukan topik yang kamu inginkan!
+            </h1>
           </div>
           <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
         </div>
@@ -284,13 +286,28 @@ export default function LandingPage() {
           autoplay={true}
         >
           <SwiperSlide>
-            <CardReview src={asdasd1} name="Narga Naraya Andono" course="Kelas Videografi" review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”" />
+            <CardReview
+              src={asdasd1}
+              name="Narga Naraya Andono"
+              course="Kelas Videografi"
+              review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <CardReview src={Group199} name="Dafina Farah Fatima" course="Kelas Programming" review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”" />
+            <CardReview
+              src={Group199}
+              name="Dafina Farah Fatima"
+              course="Kelas Programming"
+              review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <CardReview src={dafbmm1} name="Balya Elfata" course="Kelas Videografi" review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“" />
+            <CardReview
+              src={dafbmm1}
+              name="Balya Elfata"
+              course="Kelas Videografi"
+              review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
