@@ -9,51 +9,51 @@ const Footer = () => {
         <footer>
             <div className="p-10 text-gray-200 font-barlow" style={{ backgroundColor: "#093334" }}>
                 <div className="max-w-7xl mx-auto">
-                    <a href="/"><img src={logo} /></a>
+                    <a href="/"><img  alt="" src={logo} /></a>
                     <div className="mt-8 flex flex-col xl:flex-row xl:justify-between">
                         <div className="mb-5">
                             <h4 className="mb-3 font-bold text-lg">Produk</h4>
                             <div className="flex flex-col lg:flex-row lg:space-x-20">
                                 <ul className="flex-none">
                                     <li className="mb-1">
-                                        <a href="#">Olimpiade</a>
+                                        <a href="/">Olimpiade</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Riset</a>
+                                        <a href="/">Riset</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Bahasa</a>
+                                        <a href="/">Bahasa</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Robotik</a>
-                                    </li>
-                                </ul>
-                                <ul className="flex-none">
-                                    <li className="mb-1">
-                                        <a href="#">Data Science</a>
-                                    </li>
-                                    <li className="mb-1">
-                                        <a href="#">Programming Website </a>
-                                    </li>
-                                    <li className="mb-1">
-                                        <a href="#">Programming Android</a>
-                                    </li>
-                                    <li className="mb-1">
-                                        <a href="#">Programming Games</a>
+                                        <a href="/">Robotik</a>
                                     </li>
                                 </ul>
                                 <ul className="flex-none">
                                     <li className="mb-1">
-                                        <a href="#">Desain Grafis</a>
+                                        <a href="/">Data Science</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Videografi</a>
+                                        <a href="/">Programming Website </a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Seminar Motivasi</a>
+                                        <a href="/">Programming Android</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Study Abroad</a>
+                                        <a href="/">Programming Games</a>
+                                    </li>
+                                </ul>
+                                <ul className="flex-none">
+                                    <li className="mb-1">
+                                        <a href="/">Desain Grafis</a>
+                                    </li>
+                                    <li className="mb-1">
+                                        <a href="/">Videografi</a>
+                                    </li>
+                                    <li className="mb-1">
+                                        <a href="/">Seminar Motivasi</a>
+                                    </li>
+                                    <li className="mb-1">
+                                        <a href="/">Study Abroad</a>
                                     </li>
                                 </ul>
                             </div>
@@ -63,16 +63,16 @@ const Footer = () => {
                             <div className="flex flex-col lg:flex-row lg:space-x-20">
                                 <ul className="flex-none">
                                     <li className="mb-1">
-                                        <a href="#">Tentang Kami</a>
+                                        <a href="/">Tentang Kami</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Mentor Kami</a>
+                                        <a href="/">Mentor Kami</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Aktivitas</a>
+                                        <a href="/">Aktivitas</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="#">Testimoni</a>
+                                        <a href="/">Testimoni</a>
                                     </li>
                                 </ul>
                             </div>
@@ -83,15 +83,15 @@ const Footer = () => {
                             <div className="flex flex-col lg:flex-row lg:space-x-20">
                                 <ul className="flex-none">
                                     <li className="flex space-x-4 mb-3">
-                                        <img src={instagram} className="w-7 h-7" />
+                                        <img  alt="" src={instagram} className="w-7 h-7" />
                                         <a href="https://www.instagram.com/mongga_indonesia/">mongga_indonesia</a>
                                     </li>
                                     <li className="flex space-x-4 mb-3">
-                                        <img src={Linkedin} className="w-7 h-7" />
+                                        <img  alt="" src={Linkedin} className="w-7 h-7" />
                                         <a href="https://id.Linkedin.com/company/mongga-indonesia">Mongga Indonesia</a>
                                     </li>
                                     <li className="flex space-x-4 mb-3">
-                                        <img src={facebook} className="w-7 h-7" />
+                                        <img  alt="" src={facebook} className="w-7 h-7" />
                                         <a href="https://www.facebook.com/monggaindonesia/">@monggaindonesia</a>
                                     </li>
                                 </ul>

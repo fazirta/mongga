@@ -25,7 +25,7 @@ export default function Aktivitas() {
                         value="KEGIATAN KAMI"
                         position="text-center"
                     />
-                    <p className="flex items-center justify-center text-base md:text-xl lg:text-2xl py-5" style={{ color:"#093334" }}> 
+                    <p className="flex items-center justify-center text-base md:text-xl lg:text-2xl py-5" style={{ color: "#093334" }}>
                         Intip kegiatan yang telah dilakukan oleh Mongga
                     </p>
                 </div>
@@ -48,7 +48,7 @@ export default function Aktivitas() {
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={Apprenticeship1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Apprenticeship1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -56,19 +56,19 @@ export default function Aktivitas() {
                                 Apprenticeship
                             </h2>
                             <div className="flex justify-center align-center h-full py-11">
-                                <img src={Apprenticeship2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Apprenticeship2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={Apprenticeship3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Apprenticeship3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={FreeClass1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={FreeClass1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -76,19 +76,19 @@ export default function Aktivitas() {
                                 Free Class
                             </h2>
                             <div className="flex justify-center align-center h-full py-11">
-                                <img src={FreeClass2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={FreeClass2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={FreeClass3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={FreeClass3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={Bootcamp1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Bootcamp1} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -96,19 +96,19 @@ export default function Aktivitas() {
                                 Bootcamp
                             </h2>
                             <div className="flex justify-center align-center h-full py-11">
-                                <img src={Bootcamp2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Bootcamp2} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={Bootcamp3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={Bootcamp3} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -116,13 +116,13 @@ export default function Aktivitas() {
                                 Short Class
                             </h2>
                             <div className="flex justify-center align-center h-full py-11">
-                                <img src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="py-5"></div>
                             <div className="flex justify-center align-center h-full py-10">
-                                <img src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44" />
+                                <img  alt="" src={facebook} className="self-center min-w-min border-white border-8 rounded-md object-contain h-44"/>
                             </div>
                         </SwiperSlide>
                     </Swiper>

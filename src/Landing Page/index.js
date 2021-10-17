@@ -1,6 +1,9 @@
+import { useEffect, useRef, useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import { gsap, TimelineMax } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
 import CardReview from "../Card Review";
@@ -41,15 +44,77 @@ import img263686 from "../img/263686.png";
 import img263699 from "../img/263699.png";
 import GambarAktivitas from "../Gambar Aktivitas";
 
-SwiperCore.use([Navigation, Pagination]);
-
 export default function LandingPage() {
+  SwiperCore.use([Navigation, Pagination]);
+
+  gsap.registerPlugin(ScrollTrigger);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    if (loaded) {
+      const el = [
+        ".CardPersegiPanjang",
+        ".AsahKemampuanText",
+        ".TemukanTopik",
+      ]
+      gsap.set(
+        el,
+        {
+          opacity: 0,
+          y: 40,
+          scale: 0.95
+
+        }
+      )
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".AsahKemampuan",
+          start: "top center",
+        }
+      })
+        .to(
+          ".AsahKemampuanText",
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1
+          }
+        )
+        .to(
+          ".CardPersegiPanjang",
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            stagger: {
+              amount: .6,
+              from: 'left'
+            }
+          }
+        );
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".TemukanTopik",
+          start: "top-=200 center",
+        }
+      })
+        .to(
+          ".TemukanTopik",
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1
+          }
+        )
+    }
+  }, [loaded]);
+
   return (
     <>
-      <Jumbotron href="/produk" src={hero} />
-      <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
+      <Jumbotron href="/produk" src={hero} setLoaded={setLoaded} />
+      <div className="AsahKemampuan px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
         <div className="md:px-32 lg:px-72">
-          <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
+          <h1 className="AsahKemampuanText font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
             Asah kemampuan dan kualitas diri bersama Mongga!
           </h1>
         </div>
@@ -74,7 +139,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
+      <div className="TemukanTopik px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
         <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
           <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
             <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
@@ -104,8 +169,6 @@ export default function LandingPage() {
               spaceBetween={0}
               slidesPerView={1}
               navigation={true}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
               autoplay={true}
             >
               <SwiperSlide>
@@ -120,7 +183,7 @@ export default function LandingPage() {
             </Swiper>
           </div>
         </div>
-        <img
+        <img alt=""
           className="h-96 md:h-auto w-full object-cover"
           src={Component24}
           alt=""
@@ -136,8 +199,6 @@ export default function LandingPage() {
           className="max-w-full"
           spaceBetween={0}
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -180,7 +241,7 @@ export default function LandingPage() {
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
           <div>
-            <img
+            <img alt=""
               className="w-48 h-40 lg:w-96 lg:h-80 object-cover rounded-2xl"
               src={student5540227_19201}
             />
@@ -188,7 +249,7 @@ export default function LandingPage() {
           <div className="flex flex-col justify-center align-center">
             <a
               className="font-poppins text-darkgreen font-bold text-xl"
-              href="#"
+              href="/"
             >
               Ingin melanjutkan studi ke luar negeri?
             </a>
@@ -216,8 +277,6 @@ export default function LandingPage() {
             className="max-w-full my-10"
             spaceBetween={0}
             pagination={{ clickable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
             breakpoints={{
               // when window width is >= 640px
               640: {
@@ -235,13 +294,13 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <GambarAktivitas src={img263699}/>
+              <GambarAktivitas src={img263699} />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263686}/>
+              <GambarAktivitas src={img263686} />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263684}/>
+              <GambarAktivitas src={img263684} />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -256,8 +315,6 @@ export default function LandingPage() {
           className="max-w-full my-10"
           spaceBetween={0}
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -293,31 +350,31 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto mt-10">
           <div className="flex max-w-5xl flex-wrap mx-auto justify-center">
             <div className="p-4 md:p-8">
-              <img src={sman11jakarta} />
+              <img alt="" src={sman11jakarta} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={Group194} />
+              <img alt="" src={Group194} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image_1} />
+              <img alt="" src={image_1} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={sman29jakartaremovebgpreview1} />
+              <img alt="" src={sman29jakartaremovebgpreview1} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image2} />
+              <img alt="" src={image2} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image1} />
+              <img alt="" src={image1} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image3} />
+              <img alt="" src={image3} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image_2} />
+              <img alt="" src={image_2} />
             </div>
             <div className="p-4 md:p-8">
-              <img src={image} />
+              <img alt="" src={image} />
             </div>
           </div>
         </div>

@@ -87,7 +87,7 @@ export default function Navbar() {
           <div className="flex justify-start">
             <a href="/">
               <span className="sr-only">Mongga</span>
-              <img
+              <img  alt=""
                 className="h-10 w-auto md:h-0 lg:h-10"
                 src="https://mongga.id/wp-content/uploads/2021/02/cropped-MONGGA-LOGO-P1.png"
                 alt="Mongga"
@@ -252,7 +252,7 @@ export default function Navbar() {
                                                         </ul>
                                                     </div>
                                                     <div className="mt-5 text-sm">
-                                                        <a href="#" className="font-medium text-green-600 hover:text-green-500">
+                                                        <a href="/" className="font-medium text-green-600 hover:text-green-500">
                                                             {' '}
                                                             View all posts <span aria-hidden="true">&rarr;</span>
                                                         </a>
@@ -291,7 +291,7 @@ export default function Navbar() {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  <img  alt=""
                     className="h-8 w-auto"
                     src="https://mongga.id/wp-content/uploads/2021/02/cropped-MONGGA-LOGO-P1.png"
                     alt="Mongga"
@@ -327,14 +327,14 @@ export default function Navbar() {
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <a
-                  href="#"
+                  href="/"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Pricing
                 </a>
 
                 <a
-                  href="#"
+                  href="/"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Docs
