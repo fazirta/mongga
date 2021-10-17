@@ -28,22 +28,22 @@ export default function Produk() {
         blended learning. Disini, kamu bisa mempersiapkan diri untuk kompetisi 
         secara autodidak menggunakan berbagai fitur asinkron Mongga maupun dengan 
         dibimbing langsung oleh mentor-mentor terbaik kami."
-          href="/"
+          href="/contactus"
           buttonText="Chat melalui WA"
           vector={ImgVector1}
         />
 
         <Grid
           bgColor="bg-monggagrey"
-          orderA="order-2"
+          orderA="md:order-2"
           icon={ImgUpgrading}
-          orderB="order-1"
+          orderB="md:order-1"
           headingValue="Upgrading Diri"
           paragraphValue="Mongga menawarkan berbagai kelas skill-skill upgrading diri yang mampu
         menunjang karir kamu di masa depan nanti. Kurikulum kelas ini dirancang
         khusus oleh mentor-mentor terbaik kami demi memastikan penyampaian
         materi yang professional dan mudah dimengerti."
-          href="/"
+          href="/contactus"
           buttonText="Pelajari Lebih Lanjut"
           vector={ImgVector2}
         />
@@ -59,7 +59,7 @@ export default function Produk() {
         dengan fasilitator kami yang sudah berpengalaman melanjutkan studi keluar negeri. 
         Selain itu, kamu juga bisa mempersiapkan kebutuhan bahasa kamu bersama Mongga untuk 
         memenuhi syarat-syarat studi ke luar negeri."
-          href="/"
+          href="/contactus"
           buttonText="Chat melalui WA"
           vector={ImgVector3}
         />

@@ -8,7 +8,7 @@ export default function Grid(props) {
       <div className="flex flex-row flex-wrap">
         <div
           className={[
-            "flex flex-col w-full md:w-1/2 px-12",
+            "flex flex-col w-full md:w-1/2 px-12 sm:order-1",
             props.bgColor,
             props.orderA,
           ].join(" ")}
@@ -18,7 +18,7 @@ export default function Grid(props) {
           </div>
         </div>
         <div
-          className={["flex flex-col w-full md:w-1/2 px-12", props.orderB].join(
+          className={["flex flex-col w-full md:w-1/2 px-12 sm:order-2", props.orderB].join(
             " "
           )}
         >
