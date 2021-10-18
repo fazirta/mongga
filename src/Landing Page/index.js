@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { gsap, TimelineMax } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Aos from "aos";
+import "aos/dist/aos.css"
 import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
 import CardReview from "../Card Review";
@@ -46,137 +46,43 @@ import GambarAktivitas from "../Gambar Aktivitas";
 
 export default function LandingPage() {
   SwiperCore.use([Navigation, Pagination]);
-
-  gsap.registerPlugin(ScrollTrigger);
   const [loaded, setLoaded] = useState(false);
-
   useEffect(() => {
     if (loaded) {
-      const el = [
-        ".CardPersegiPanjang",
-        ".AsahKemampuanText",
-        ".TemukanTopik",
-      ]
-      gsap.set(
-        el,
-        {
-          opacity: 0,
-          y: 40,
-          scale: 0.95
-
-        }
-      )
-      gsap.set(
-        ".JuaraText",
-        {
-          opacity: 0,
-          x: -40,
-        }
-      )
-      gsap.set(
-        ".JuaraSwiper",
-        {
-          opacity: 0,
-          x: 40,
-        }
-      )
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".AsahKemampuan",
-          start: "top center",
-        }
+      Aos.init({
+        once: true
       })
-        .to(
-          ".AsahKemampuanText",
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: "expo"
-          }
-        )
-        .to(
-          ".CardPersegiPanjang",
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            stagger: {
-              amount: .6,
-              from: 'left'
-            },
-            ease: "back"
-          }
-        );
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".TemukanTopik",
-          start: "top-=200 center",
-        }
-      })
-        .to(
-          ".TemukanTopik",
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: "power1"
-          }
-        )
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".JuaraWrapper",
-          start: "top center",
-        }
-      })
-        .to(
-          ".JuaraText",
-          {
-            opacity: 1,
-            x: 0,
-            ease: "power1"
-          }
-        )
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".JuaraWrapper",
-          start: "top center",
-        }
-      })
-        .to(
-          ".JuaraSwiper",
-          {
-            opacity: 1,
-            x: 0,
-            ease: "power1"
-          }
-        )
     }
   }, [loaded]);
 
   return (
     <>
       <Jumbotron href="/produk" src={hero} setLoaded={setLoaded} />
-      <div className="AsahKemampuan px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
+      <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
         <div className="md:px-32 lg:px-72">
-          <h1 className="AsahKemampuanText font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
+          <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
             Asah kemampuan dan kualitas diri bersama Mongga!
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row space-y-5 md:space-y-10 lg:space-y-0 justify-around mt-10 lg:px-10">
           <CardPersegiPanjang
+            dataAOS="zoom-in-up"
             title="Penyedia layanan Pelatihan dan Konsultasi yang Terpercaya dan Kompeten"
             link="Aktivitas Kami >"
             src={online}
             href="/aktivitas"
           />
           <CardPersegiPanjang
+            dataAOS="zoom-in-up"
+            delay="100"
             title="Mentor Berpengalaman dan Berkualitas di bidangnya"
             link="Mentor Kami >"
             src={leader}
             href="/aktivitas"
           />
           <CardPersegiPanjang
+            dataAOS="zoom-in-up"
+            delay="200"
             title="Telah digunakan dan dibuktikan oleh banyak orang"
             link="Testimoni >"
             src={crowd}
@@ -184,7 +90,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <div className="TemukanTopik px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
+      <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
         <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
           <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
             <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">Temukan topik yang kamu inginkan!</h1>
@@ -192,7 +98,7 @@ export default function LandingPage() {
           <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
         </div>
       </div>
-      <div className="JuaraWrapper relative mt-20 overflow-x-hidden">
+      <div className="relative mt-20 overflow-x-hidden">
         <div className="flex justify-center">
           <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row flex-row align-center">
             <div className="JuaraText flex flex-col justify-center">
@@ -210,7 +116,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Swiper
-              className="JuaraSwiper mt-8 md:mt-0 max-w-full md:max-w-sm lg:max-w-lg"
+              className="mt-8 md:mt-0 max-w-full md:max-w-sm lg:max-w-lg"
               spaceBetween={0}
               slidesPerView={1}
               navigation={true}
@@ -241,6 +147,7 @@ export default function LandingPage() {
           </h1>
         </div>
         <Swiper
+          data-aos="fade-up"
           className="max-w-full"
           spaceBetween={0}
           pagination={{ clickable: true }}
@@ -281,7 +188,7 @@ export default function LandingPage() {
             <CardPersegi title="Seminar Motivasi" src={Group243} />
           </SwiperSlide>
         </Swiper>
-        <ButtonHijau href="/produk" text="Pelajari Selengkapnya" />
+        <ButtonHijau dataAOS="zoom-in" href="/produk" text="Pelajari Selengkapnya" />
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
@@ -298,11 +205,13 @@ export default function LandingPage() {
             >
               Ingin melanjutkan studi ke luar negeri?
             </a>
-            <p className="font-poppins text-darkgreen max-w-sm mt-8">
+            <p
+              className="font-poppins text-darkgreen max-w-sm mt-8">
               Persiapkan dirimu di Study Abroad bersama Mongga!
             </p>
             <div className="flex my-5">
               <ButtonHijau
+                dataAOS="zoom-in"
                 className="self-start"
                 href="/produk"
                 text="Pelajari Selengkapnya"
@@ -319,6 +228,7 @@ export default function LandingPage() {
             </h1>
           </div>
           <Swiper
+            data-aos="fade-up"
             className="max-w-full my-10"
             spaceBetween={0}
             pagination={{ clickable: true }}
@@ -357,6 +267,7 @@ export default function LandingPage() {
           </h1>
         </div>
         <Swiper
+          data-aos="fade-up"
           className="max-w-full my-10"
           spaceBetween={0}
           pagination={{ clickable: true }}
@@ -395,36 +306,36 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto mt-10">
           <div className="flex max-w-5xl flex-wrap mx-auto justify-center">
             <div className="p-4 md:p-8">
-              <img alt="" src={sman11jakarta} />
+              <img data-aos="fade-up" alt="" src={sman11jakarta} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="" className="p-4 md:p-8">
               <img alt="" src={Group194} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="100" className="p-4 md:p-8">
               <img alt="" src={image_1} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="200" className="p-4 md:p-8">
               <img alt="" src={sman29jakartaremovebgpreview1} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="300" className="p-4 md:p-8">
               <img alt="" src={image2} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="400" className="p-4 md:p-8">
               <img alt="" src={image1} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="500" className="p-4 md:p-8">
               <img alt="" src={image3} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="600" className="p-4 md:p-8">
               <img alt="" src={image_2} />
             </div>
-            <div className="p-4 md:p-8">
+            <div data-aos="zoom-in-up" data-aos-delay="700" className="p-4 md:p-8">
               <img alt="" src={image} />
             </div>
           </div>
         </div>
         <div className="mt-5">
-          <h1 className="font-bold text-gray-500 font-poppins text-xl text-center">
+          <h1 data-aos="zoom-in-up" data-aos-delay="600" className="font-bold text-gray-500 font-poppins text-xl text-center">
             Dan masih banyak lagi!
           </h1>
         </div>
@@ -439,7 +350,7 @@ export default function LandingPage() {
             Jangan ragu untuk bertanya dan silahkan hubungi kami lewat tombol
             dibawah ini
           </h2>
-          <ButtonHijau href="/contactus" text="Hubungi Kami" />
+          <ButtonHijau dataAOS="zoom-in" href="/contactus" text="Hubungi Kami" />
         </div>
       </div>
     </>
