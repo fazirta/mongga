@@ -66,6 +66,20 @@ export default function LandingPage() {
 
         }
       )
+      gsap.set(
+        ".JuaraText",
+        {
+          opacity: 0,
+          x: -40,
+        }
+      )
+      gsap.set(
+        ".JuaraSwiper",
+        {
+          opacity: 0,
+          x: 40,
+        }
+      )
       gsap.timeline({
         scrollTrigger: {
           trigger: ".AsahKemampuan",
@@ -104,6 +118,32 @@ export default function LandingPage() {
             opacity: 1,
             y: 0,
             scale: 1
+          }
+        )
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".JuaraWrapper",
+          start: "top center",
+        }
+      })
+        .to(
+          ".JuaraText",
+          {
+            opacity: 1,
+            x: 0,
+          }
+        )
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".JuaraWrapper",
+          start: "top center",
+        }
+      })
+        .to(
+          ".JuaraSwiper",
+          {
+            opacity: 1,
+            x: 0,
           }
         )
     }
@@ -147,10 +187,10 @@ export default function LandingPage() {
           <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
         </div>
       </div>
-      <div className="relative mt-20">
+      <div className="JuaraWrapper relative mt-20 overflow-x-hidden">
         <div className="flex justify-center">
           <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row flex-row align-center">
-            <div className="flex flex-col justify-center">
+            <div className="JuaraText flex flex-col justify-center">
               <div className="mx-auto">
                 <h1
                   className="font-poppins text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
@@ -165,7 +205,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Swiper
-              className="mt-8 md:mt-0 max-w-full md:max-w-sm lg:max-w-lg"
+              className="JuaraSwiper mt-8 md:mt-0 max-w-full md:max-w-sm lg:max-w-lg"
               spaceBetween={0}
               slidesPerView={1}
               navigation={true}
