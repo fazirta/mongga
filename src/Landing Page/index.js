@@ -91,7 +91,8 @@ export default function LandingPage() {
           {
             opacity: 1,
             y: 0,
-            scale: 1
+            scale: 1,
+            ease: "expo"
           }
         )
         .to(
@@ -103,7 +104,8 @@ export default function LandingPage() {
             stagger: {
               amount: .6,
               from: 'left'
-            }
+            },
+            ease: "back"
           }
         );
       gsap.timeline({
@@ -117,7 +119,8 @@ export default function LandingPage() {
           {
             opacity: 1,
             y: 0,
-            scale: 1
+            scale: 1,
+            ease: "power1"
           }
         )
       gsap.timeline({
@@ -131,6 +134,7 @@ export default function LandingPage() {
           {
             opacity: 1,
             x: 0,
+            ease: "power1"
           }
         )
       gsap.timeline({
@@ -144,6 +148,7 @@ export default function LandingPage() {
           {
             opacity: 1,
             x: 0,
+            ease: "power1"
           }
         )
     }
