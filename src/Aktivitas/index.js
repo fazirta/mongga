@@ -7,6 +7,7 @@ import Olimpiade from '../img/OlimMts.png';
 import Workshop from '../img/Workshop.png';
 import ShortClass from '../img/ShortClass.png';
 import Bootcamp from '../img/Bootcamp.png';
+import GambarAktivitas1 from '../Gambar Aktivitas 1';
 
 export default function Aktivitas() {
     return (
@@ -21,85 +22,66 @@ export default function Aktivitas() {
                         Intip kegiatan yang telah dilakukan oleh Mongga
                     </p>
                 </div>
-                <div className="relative pt-52 pb-28">
-                    <div className="absolute md:top-0 md:bottom-20 md:left-48 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:left-52">
-                        <img src={Apprenticeship} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="absolute md:top-0 md:bottom-20 md:right-56 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg  md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:right-52">
-                        <img src={Webinar} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="font-poppins font-bold">
-                        <p className="absolute md:text-xl lg:text-2x1 pl-48">                                
-                            Apprenticeship
-                        </p>
-                        <p className="absolute right-3 md:text-xl lg:text-2x1">
-                            Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri                                
-                        </p>
-                    </div>
-                </div>  
-                <div className="relative pt-52 pb-28">
-                    <div className="absolute md:top-0 md:bottom-20 md:left-48 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:left-52">
-                        <img src={OpenClass} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="absolute md:top-0 md:bottom-20 md:right-56 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg  md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:right-52">
-                        <img src={Olimpiade} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="font-poppins font-bold">
-                        <p className="absolute md:text-xl lg:text-2x1 px-48">                                
-                            Open Class : Basic
-                        </p>
-                        <p className="absolute right-40 md:text-xl lg:text-2x1">
-                            Pelatihan Olimpiade MTsN 3 Jakarta                                
-                        </p>
-                    </div>
-                </div> 
-                <div className="relative pt-52 pb-28">
-                    <div className="absolute md:top-0 md:bottom-20 md:left-48 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:left-52">
-                        <img src={Workshop} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="absolute md:top-0 md:bottom-20 md:right-56 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg  md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:right-52">
-                        <img src={ShortClass} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="font-poppins font-bold">
-                        <p className="absolute md:text-xl lg:text-2x1 px-48">                                
-                            BEST Workshop : Python for Beginners (Biomed SGU)
-                        </p>
-                        <p className="absolute right-96 md:text-xl lg:text-2x1">
-                            Short Class #1                               
-                        </p>
+                <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
+                    <div className="flex flex-wrap justify-center lg:justify-between">
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={Apprenticeship} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                    Apprenticeship
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={Webinar} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={OpenClass} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                Open Class : Basic
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={Olimpiade} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                Pelatihan Olimpiade MTsN 3 Jakarta
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={Workshop} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                BEST Workshop : Python for Beginners (Biomed SGU)
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={ShortClass} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                Short Class #1
+                                </p>
+                            </div>
+                        </div>
+                        <div className="p-5 lg:p-10">
+                            <GambarAktivitas1 src={Bootcamp} />
+                            <div>
+                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                Grow Series : Bootcamp Programming
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="relative pt-52 pb-28">
-                    <div className="absolute md:top-0 md:bottom-20 md:left-48 md:w-80 md:h-48 md:shadow-lg rounded md:rounded-lg md:max-w-4xl" style={{ backgroundColor: "#093334" }}>
-                                
-                    </div>
-                    <div className="absolute md:top-0 md:left-52">
-                        <img src={Bootcamp} className="md:w-80 md:h-44" />
-                    </div>
-                    <div className="font-poppins font-bold">
-                        <p className="absolute md:text-xl lg:text-2x1 px-48">                                
-                            Grow Series : Bootcamp Programming
-                        </p>
-                    </div>
-                </div>             
             </div>
         </>
     )
