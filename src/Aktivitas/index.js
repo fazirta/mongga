@@ -36,7 +36,7 @@ export default function Aktivitas() {
                             <GambarAktivitas1 src={Webinar} />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
+                                    Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
                                 </p>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ export default function Aktivitas() {
                             <GambarAktivitas1 src={OpenClass} />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                Open Class : Basic
+                                    Open Class : Basic
                                 </p>
                             </div>
                         </div>
@@ -52,33 +52,39 @@ export default function Aktivitas() {
                             <GambarAktivitas1 src={Olimpiade} />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                Pelatihan Olimpiade MTsN 3 Jakarta
+                                    Pelatihan Olimpiade MTsN 3 Jakarta
                                 </p>
                             </div>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={Workshop} />
-                            <div>
-                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                BEST Workshop : Python for Beginners (Biomed SGU)
-                                </p>
-                            </div>
+                            <a href="/aktivitas/5">
+                                <GambarAktivitas1 src={Workshop} />
+                                <div>
+                                    <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                        BEST Workshop : Python for Beginners (Biomed SGU)
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={ShortClass} />
-                            <div>
-                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                Short Class #1
-                                </p>
-                            </div>
+                            <a href="/aktivitas/6">
+                                <GambarAktivitas1 src={ShortClass} />
+                                <div>
+                                    <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                        Short Class #1
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={Bootcamp} />
-                            <div>
-                                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                                Grow Series : Bootcamp Programming
-                                </p>
-                            </div>
+                            <a href="/aktivitas/7">
+                                <GambarAktivitas1 src={Bootcamp} />
+                                <div>
+                                    <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                                        Grow Series : Bootcamp Programming
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
