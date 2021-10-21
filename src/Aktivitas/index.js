@@ -15,7 +15,7 @@ export default function Aktivitas() {
             <div className="my-20 px-3 max-w-7x1 mx-auto">
                 <div className="font-poppins py-5 text-center sm:text-left">
                     <Heading1
-                        value="KEGIATAN KAMI"
+                        value="AKTIVITAS"
                         position="text-center"
                     />
                     <p className="flex items-center justify-center text-base md:text-xl lg:text-2xl py-5" style={{ color:"#093334" }}> 

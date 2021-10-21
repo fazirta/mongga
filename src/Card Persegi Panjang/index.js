@@ -5,20 +5,22 @@ import {
 export default function CardPersegiPanjang(props) {
     return (
         <>
-        <a href={props.href}>
-            <div className="flex flex-col justify-between shadow-lg w-80 min-h-96 rounded-xl font-poppins">
-                <div>
-                    <img className="w-full max-h-52 object-cover rounded-t-xl" src={props.src} alt={props.text} />
+            <a href={props.href}>
+                <div className="flex flex-row lg:flex-col space-x-4 lg:space-x-0 p-4 lg:p-0 justify-between shadow-lg hover:shadow-xl transition ease-out duration-200 max-w-xl mx-auto lg:w-72 lg:h-full rounded-xl font-poppins" style={{ backgroundColor: '#F8F8F8' }}>
+                    <div className="flex flex-col lg:flex-row justify-center align-center px-2 md:px-5 lg:px-0 lg:py-8">
+                        <img className="w-auto h-16 lg:w-auto md:h-28 lg:h-auto" src={props.src} alt={props.text} />
+                    </div>
+                    <div className="flex-1 lg:flex-auto flex flex-col justify-center">
+                        <div className="lg:px-12">
+                            <h4 className="lg:text-lg lg:text-center font-bold text-darkgreen">
+                                {props.title}
+                            </h4>
+                        </div>
+                        <div className="pt-4 lg:py-8 flex lg:items-center lg:justify-center lg:px-4 lg:text-lg text-gray-400 hover:text-maingreen transition duration-300">
+                            {props.link}
+                        </div>
+                    </div>
                 </div>
-                <div className="py-5 px-20">
-                    <h4 className="text-lg text-center" style={{ color: "#093334" }}>
-                        {props.title}
-                    </h4>
-                </div>
-                <div className="py-10 flex items-center justify-center p-4 text-lg">
-                    {props.a}
-                </div>
-            </div>
             </a>
         </>
     )
