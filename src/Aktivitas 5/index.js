@@ -14,7 +14,7 @@ export default function Aktivitas5() {
                 <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen font-poppins">
                     BESt Workshop : Python for Beginners (Biomed SGU)
                 </h1>
-                <h2 className="mt-4 lg:mt-8 text-md lg:text-lg text-gray-500 font-poppins">
+                <h2 className="mt-3 lg:mt-6 text-md lg:text-lg text-gray-500 font-poppins">
                     4-5 Juni 2021
                 </h2>
             </div>

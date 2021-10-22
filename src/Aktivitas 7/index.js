@@ -27,7 +27,7 @@ export default function Aktivitas7() {
                 <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen font-poppins">
                     Grow Series : Bootcamp Programming
                 </h1>
-                <h2 className="mt-4 lg:mt-8 text-md lg:text-lg text-gray-500 font-poppins">
+                <h2 className="mt-3 lg:mt-6 text-md lg:text-lg text-gray-500 font-poppins">
                     14 Agustus - 14 September 2021
                 </h2>
             </div>

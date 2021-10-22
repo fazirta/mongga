@@ -35,7 +35,7 @@ export default function Aktivitas6() {
                 <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen font-poppins">
                     Short Class #1
                 </h1>
-                <h2 className="mt-4 lg:mt-8 text-md lg:text-lg text-gray-500 font-poppins">
+                <h2 className="mt-3 lg:mt-6 text-md lg:text-lg text-gray-500 font-poppins">
                     26 Juni - 11 Juli 2021
                 </h2>
             </div>

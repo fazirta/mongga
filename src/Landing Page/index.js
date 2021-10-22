@@ -100,17 +100,17 @@ export default function LandingPage() {
       </div>
       <div className="relative mt-20 overflow-x-hidden">
         <div className="flex justify-center">
-          <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row flex-row align-center">
+          <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row align-center">
             <div className="JuaraText flex flex-col justify-center">
               <div className="mx-auto">
                 <h1
-                  className="font-poppins text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
+                  className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
                   style={{ lineHeight: "1.16" }}
                 >
                   Kejar dan <br />
                   Raih Juaramu!
                 </h1>
-                <h2 className="font-poppins text-white text-sm md:text-xl lg:text-2xl font-light font-poppins">
+                <h2 className="text-white text-sm md:text-xl lg:text-2xl font-light font-poppins">
                   Dorong kemampuan diri dan jadilah juara sekarang!
                 </h2>
               </div>
