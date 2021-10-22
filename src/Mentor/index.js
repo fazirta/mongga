@@ -2,6 +2,7 @@ import ButtonHijau from "../Button Hijau";
 import Heading1 from "../Heading1";
 import Paragraph1 from "../Paragraph1";
 import JumbotronHijau from "../Jumbotron Hijau";
+import pic_awla from "../img/profile-awla.png";
 
 export default function Mentor() {
   return (
@@ -17,6 +18,16 @@ export default function Mentor() {
             position="text-center max-w-xl"
           />
         </div>
+      </div>
+
+      <div className="flex flex-row">
+        <div className="flex-col">
+          <div className="flex-row">
+            <img src={pic_awla}></img>
+          </div>
+          <div className="flex-row"></div>
+        </div>
+        <div className="flex-col"></div>
       </div>
 
       <div className="my-24 px-3 max-w-7xl mx-auto">
