@@ -15,6 +15,9 @@ import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
+import Aktivitas5 from "./Aktivitas 5";
+import Aktivitas6 from "./Aktivitas 6";
+import Aktivitas7 from "./Aktivitas 7";
 
 function App() {
   return (
@@ -27,6 +30,15 @@ function App() {
           </Route>
           <Route path="/mentor">
             <Mentor />
+          </Route>
+          <Route path="/aktivitas/5">
+            <Aktivitas5 />
+          </Route>
+          <Route path="/aktivitas/6">
+            <Aktivitas6 />
+          </Route>
+          <Route path="/aktivitas/7">
+            <Aktivitas7 />
           </Route>
           <Route path="/aktivitas">
             <Aktivitas />

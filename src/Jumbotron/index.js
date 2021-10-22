@@ -1,12 +1,9 @@
-import {
-    a,
-} from "react-router-dom";
-
 export default function Jumbotron(props) {
+
     return (
         <>
             <a href={props.href}>
-                <img src={props.src} alt="" />
+                <img alt="" className="w-full" src={props.src} onLoad={() => props.setLoaded(true)} />
             </a>
         </>
     )
