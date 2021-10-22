@@ -15,6 +15,7 @@ import Screenshot1170 from "../img/Screenshot (1170).png";
 import Screenshot1066 from "../img/Screenshot (1066).png";
 import Screenshot1067 from "../img/Screenshot (1067).png";
 import Screenshot1068 from "../img/Screenshot (1068).png";
+import Galeri from '../Galeri';
 
 export default function Aktivitas7() {
     return (
@@ -31,88 +32,16 @@ export default function Aktivitas7() {
                 </h2>
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Android Development for Beginner Using Kotlin</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1174} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1073} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263694} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263693} />
-                    </div>
-                </div>
+                <Galeri title="Android Development for Beginner Using Kotlin" src1={Screenshot1174} src2={Screenshot1073} src3={IMG_263694} src4={IMG_263693} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Game Development for Beginner Using Unity2D</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1071} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1175} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1176} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1070} />
-                    </div>
-                </div>
+                <Galeri title="Game Development for Beginner Using Unity2D" src1={Screenshot1071} src2={Screenshot1175} src3={Screenshot1176} src4={Screenshot1070} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Python for Data Science : Beginner Level</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263697} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263704} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263705} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={IMG_263698} />
-                    </div>
-                </div>
+                <Galeri title="Python for Data Science : Beginner Level" src1={IMG_263697} src2={IMG_263704} src3={IMG_263705} src4={IMG_263698} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Fullstack Website Development for Beginner Using Laravel</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1170} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1066} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1067} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1068} />
-                    </div>
-                </div>
+                <Galeri title="Fullstack Website Development for Beginner Using Laravel" src1={Screenshot1170} src2={Screenshot1066} src3={Screenshot1067} src4={Screenshot1068} />
             </div>
         </>
     )

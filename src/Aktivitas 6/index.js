@@ -23,6 +23,7 @@ import Screenshot1147 from "../img/Screenshot (1147).png";
 import Screenshot1148 from "../img/Screenshot (1148).png";
 import Screenshot1145 from "../img/Screenshot (1145).png";
 import Screenshot1149 from "../img/Screenshot (1149).png";
+import Galeri from '../Galeri';
 
 export default function Aktivitas6() {
     return (
@@ -39,130 +40,22 @@ export default function Aktivitas6() {
                 </h2>
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Generating Ideas for Journal & Competition</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1129} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1130} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1134} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1133} />
-                    </div>
-                </div>
+                <Galeri title="Generating Ideas for Journal & Competition" src1={Screenshot1129} src2={Screenshot1130} src3={Screenshot1134} src4={Screenshot1133} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Research for Academic Essays & Competitions</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1126} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1123} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1122} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1104} />
-                    </div>
-                </div>
+                <Galeri title="Research for Academic Essays & Competitions" src1={Screenshot1126} src2={Screenshot1123} src3={Screenshot1122} src4={Screenshot1104} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Research and Statistics for Bachelor Thesis</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1138} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1137} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1140} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot11391} />
-                    </div>
-                </div>
+                <Galeri title="Research and Statistics for Bachelor Thesis" src1={Screenshot1138} src2={Screenshot1137} src3={Screenshot1140} src4={Screenshot11391} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Presentation for Competitions and Formal Purposes</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1142} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1143} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1079} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1144} />
-                    </div>
-                </div>
+                <Galeri title="Presentation for Competitions and Formal Purposes" src1={Screenshot1142} src2={Screenshot1143} src3={Screenshot1079} src4={Screenshot1144} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">Public Speaking Skills 101</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1077} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot11691} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1076} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1135} />
-                    </div>
-                </div>
+                <Galeri title="Public Speaking Skills 101" src1={Screenshot1077} src2={Screenshot11691} src3={Screenshot1076} src4={Screenshot1135} />
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="mx-3 lg:mx-6">
-                    <div className="w-full bg-darkgreen p-2 lg:p-4 mt-5 rounded-t-3xl">
-                        <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">IELTS Preparation 101</h1>
-                    </div>
-                </div>
-                <div className="flex flex-wrap justify-around xl:justify-between">
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1147} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1148} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1145} />
-                    </div>
-                    <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Screenshot1149} />
-                    </div>
-                </div>
+                <Galeri title="IELTS Preparation 101" src1={Screenshot1147} src2={Screenshot1148} src3={Screenshot1145} src4={Screenshot1149} />
             </div>
         </>
     )
