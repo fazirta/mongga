@@ -7,7 +7,7 @@ import Olimpiade from '../img/OlimMts.png';
 import Workshop from '../img/Workshop.png';
 import ShortClass from '../img/ShortClass.png';
 import Bootcamp from '../img/Bootcamp.png';
-import GambarAktivitas1 from '../Gambar Aktivitas 1';
+import GambarAktivitas from '../Gambar Aktivitas';
 
 export default function Aktivitas() {
     return (
@@ -25,7 +25,7 @@ export default function Aktivitas() {
                 <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
                     <div className="flex flex-wrap justify-center lg:justify-between">
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={Apprenticeship} />
+                            <GambarAktivitas src={Apprenticeship} position="left" />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                     Apprenticeship
@@ -33,7 +33,7 @@ export default function Aktivitas() {
                             </div>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={Webinar} />
+                            <GambarAktivitas src={Webinar} position="left" />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                     Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
@@ -41,7 +41,7 @@ export default function Aktivitas() {
                             </div>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={OpenClass} />
+                            <GambarAktivitas src={OpenClass} position="left" />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                     Open Class : Basic
@@ -49,7 +49,7 @@ export default function Aktivitas() {
                             </div>
                         </div>
                         <div className="p-5 lg:p-10">
-                            <GambarAktivitas1 src={Olimpiade} />
+                            <GambarAktivitas src={Olimpiade} position="left" />
                             <div>
                                 <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                     Pelatihan Olimpiade MTsN 3 Jakarta
@@ -58,7 +58,7 @@ export default function Aktivitas() {
                         </div>
                         <div className="p-5 lg:p-10">
                             <a href="/aktivitas/5">
-                                <GambarAktivitas1 src={Workshop} />
+                                <GambarAktivitas src={Workshop} position="left" />
                                 <div>
                                     <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                         BEST Workshop : Python for Beginners (Biomed SGU)
@@ -68,7 +68,7 @@ export default function Aktivitas() {
                         </div>
                         <div className="p-5 lg:p-10">
                             <a href="/aktivitas/6">
-                                <GambarAktivitas1 src={ShortClass} />
+                                <GambarAktivitas src={ShortClass} position="left" />
                                 <div>
                                     <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                         Short Class #1
@@ -78,7 +78,7 @@ export default function Aktivitas() {
                         </div>
                         <div className="p-5 lg:p-10">
                             <a href="/aktivitas/7">
-                                <GambarAktivitas1 src={Bootcamp} />
+                                <GambarAktivitas src={Bootcamp} position="left" />
                                 <div>
                                     <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
                                         Grow Series : Bootcamp Programming

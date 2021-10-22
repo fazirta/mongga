@@ -249,13 +249,13 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <GambarAktivitas src={img263699} />
+              <GambarAktivitas src={img263699} position="right" />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263686} />
+              <GambarAktivitas src={img263686} position="right" />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263684} />
+              <GambarAktivitas src={img263684} position="right" />
             </SwiperSlide>
           </Swiper>
         </div>
