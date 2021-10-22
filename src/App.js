@@ -15,6 +15,10 @@ import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
+import Aktivitas1 from "./Aktivitas1";
+import Aktivitas2 from "./Aktivitas2";
+import Aktivitas3 from "./Aktivitas3";
+import Aktivitas4 from "./Aktivitas4";
 
 function App() {
   return (
@@ -27,6 +31,18 @@ function App() {
           </Route>
           <Route path="/mentor">
             <Mentor />
+          </Route>
+          <Route path="/aktivitas/apprenticeship">
+            <Aktivitas1 />
+          </Route>
+          <Route path="/aktivitas/webinar">
+            <Aktivitas2 />
+          </Route>
+          <Route path="/aktivitas/openclass">
+            <Aktivitas3 />
+          </Route>
+          <Route path="/aktivitas/olimpiade">
+            <Aktivitas4 />
           </Route>
           <Route path="/aktivitas">
             <Aktivitas />
