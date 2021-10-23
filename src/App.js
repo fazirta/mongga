@@ -13,6 +13,8 @@ import ContactUs from './Contact Us';
 import Komunitas from './Komunitas';
 import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
+import UpgradingDiri from "./Upgrading Diri";
+import UpgradingDiriLengkap from "./Upgrading Diri Lengkap";
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
           </Route>
           <Route path="/komunitas">
             <Komunitas />
+          </Route>
+          <Route path="/upgrading">
+            <UpgradingDiri />
+          </Route>
+          <Route path="/upgradinglengkap">
+            <UpgradingDiriLengkap />
           </Route>
           <Route path="/">
             <LandingPage/>
