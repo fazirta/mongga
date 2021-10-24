@@ -14,7 +14,7 @@ import BasicVideo3 from '../img/BasicVideo3.png';
 import BasicVideo4 from '../img/BasicVideo4.png';
 
 
-export default function Aktivitas2() {
+export default function Aktivitas3() {
     return (
         <>
             <div className="px-5 py-5 xl:py-10 lg:px-16 mx-auto mt-5 md:mt-10 max-w-7xl">

@@ -19,8 +19,7 @@ import English2 from '../img/English2.png';
 import English3 from '../img/English3.png';
 import English4 from '../img/English4.png';
 
-
-export default function Aktivitas2() {
+export default function Aktivitas1() {
     return (
         <>
             <div className="px-5 py-5 xl:py-10 lg:px-16 mx-auto mt-5 md:mt-10 max-w-7xl">

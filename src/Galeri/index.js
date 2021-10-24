@@ -6,7 +6,7 @@ export default function Galeri(props) {
                     <h1 className="text-center text-white font-poppins font-semibold text-lg lg:text-2xl">{props.title}</h1>
                 </div>
             </div>
-            <div className="flex flex-warp justify-around xl:justify-between">
+            <div className="flex flex-wrap justify-around xl:justify-between">
                 <div className="p-3 lg:p-6">
                     <img className="w-96 xl:w-auto" src={props.src1} />
                 </div>
@@ -18,24 +18,6 @@ export default function Galeri(props) {
                 </div>
                 <div className="p-3 lg:p-6">
                     <img className="w-96 xl:w-auto" src={props.src4} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src5} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src6} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src7} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src8} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src9} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={props.src10} />
                 </div>
             </div>
         </>

@@ -1,5 +1,4 @@
 import Breadcrumb from '../Breadcrumb';
-import Galeri from '../Galeri';
 import Webinar1 from '../img/Webinar1.png';
 import Webinar2 from '../img/Webinar2.png';
 
@@ -18,11 +17,13 @@ export default function Aktivitas2() {
                 </h2>
             </div>
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={Webinar1} />
-                </div>
-                <div className="p-3 lg:p-6">
-                    <img className="w-96 xl:w-auto" src={Webinar2} />
+                <div className="flex flex-wrap justify-around xl:justify-between">
+                    <div className="p-3 lg:p-6">
+                        <img className="w-96 xl:w-auto" src={Webinar1} />
+                    </div>
+                    <div className="p-3 lg:p-6">
+                        <img className="w-96 xl:w-auto" src={Webinar2} />
+                    </div>
                 </div>
             </div>
         </>

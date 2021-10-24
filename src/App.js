@@ -15,10 +15,13 @@ import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
-import Aktivitas1 from "./Aktivitas1";
-import Aktivitas2 from "./Aktivitas2";
-import Aktivitas3 from "./Aktivitas3";
-import Aktivitas4 from "./Aktivitas4";
+import Aktivitas1 from "./Aktivitas 1";
+import Aktivitas2 from "./Aktivitas 2";
+import Aktivitas3 from "./Aktivitas 3";
+import Aktivitas4 from "./Aktivitas 4";
+import Aktivitas5 from "./Aktivitas 5";
+import Aktivitas6 from "./Aktivitas 6";
+import Aktivitas7 from "./Aktivitas 7";
 
 function App() {
   return (
@@ -38,11 +41,20 @@ function App() {
           <Route path="/aktivitas/webinar">
             <Aktivitas2 />
           </Route>
-          <Route path="/aktivitas/openclass">
+          <Route path="/aktivitas/open-class">
             <Aktivitas3 />
           </Route>
-          <Route path="/aktivitas/olimpiade">
+          <Route path="/aktivitas/pelatihan-olimpiade">
             <Aktivitas4 />
+          </Route>
+          <Route path="/aktivitas/workshop">
+            <Aktivitas5 />
+          </Route>
+          <Route path="/aktivitas/short-class">
+            <Aktivitas6 />
+          </Route>
+          <Route path="/aktivitas/bootcamp">
+            <Aktivitas7 />
           </Route>
           <Route path="/aktivitas">
             <Aktivitas />
