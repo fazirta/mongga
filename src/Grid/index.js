@@ -8,17 +8,17 @@ export default function Grid(props) {
       <div className="flex flex-row flex-wrap">
         <div
           className={[
-            "flex flex-col w-full md:w-1/2 px-12",
+            "flex flex-col w-full md:w-1/2 px-12 sm:order-1",
             props.bgColor,
             props.orderA,
           ].join(" ")}
         >
           <div className="flex justify-center h-full items-center">
-            <img className="w-auto max-h-60" src={props.icon}></img>
+            <img  alt="" className="w-auto max-h-60" src={props.icon}></img>
           </div>
         </div>
         <div
-          className={["flex flex-col w-full md:w-1/2 px-12", props.orderB].join(
+          className={["flex flex-col w-full md:w-1/2 px-12 sm:order-2", props.orderB].join(
             " "
           )}
         >
@@ -30,7 +30,7 @@ export default function Grid(props) {
           <ButtonHijau href={props.href} text={props.buttonText} />
         </div>
         <div className="w-full -z-10 relative bottom-10 md:bottom-16 order-last">
-          <img className="w-full max-h-20" src={props.vector}></img>
+          <img  alt="" className="w-full max-h-20" src={props.vector}></img>
         </div>
       </div>
     </>
