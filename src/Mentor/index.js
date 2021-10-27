@@ -15,7 +15,7 @@ export default function Mentor() {
         <div className="flex justify-center">
           <Paragraph1
             value="Dengan mentor terbaik kami yang memiliki pengalaman terbaik di bidangnya, kami dapat memberikan kelas yang bermutu."
-            position="text-center max-w-xl"
+            position="text-center max-w-xl pt-6"
           />
         </div>
       </div>
@@ -25,7 +25,9 @@ export default function Mentor() {
           <div className="flex-row">
             <img src={pic_awla}></img>
           </div>
-          <div className="flex-row"></div>
+          <div className="flex-row">
+            <Heading1 value="Awla Fajri Assalam" />
+          </div>
         </div>
         <div className="flex-col"></div>
       </div>
