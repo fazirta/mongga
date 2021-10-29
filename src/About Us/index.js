@@ -204,7 +204,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div>
-        <img alt="" src={Divider} />
+        <img alt="" src={Divider} className="w-full" />
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
