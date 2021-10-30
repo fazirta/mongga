@@ -13,7 +13,7 @@ const Footer = () => {
       >
         <div className="max-w-7xl mx-auto">
           <a href="/">
-            <img src={logo} />
+            <img alt="" src={logo} />
           </a>
           <div className="mt-8 flex flex-col xl:flex-row xl:justify-between">
             <div className="mb-5">
@@ -66,19 +66,19 @@ const Footer = () => {
               <div className="flex flex-col lg:flex-row lg:space-x-20">
                 <ul className="flex-none">
                   <li className="flex space-x-4 mb-3">
-                    <img src={instagram} className="w-7 h-7" />
+                    <img alt="" src={instagram} className="w-7 h-7" />
                     <a href="https://www.instagram.com/mongga_indonesia/">
                       mongga_indonesia
                     </a>
                   </li>
                   <li className="flex space-x-4 mb-3">
-                    <img src={Linkedin} className="w-7 h-7" />
+                    <img alt="" src={Linkedin} className="w-7 h-7" />
                     <a href="https://id.Linkedin.com/company/mongga-indonesia">
                       Mongga Indonesia
                     </a>
                   </li>
                   <li className="flex space-x-4 mb-3">
-                    <img src={facebook} className="w-7 h-7" />
+                    <img alt="" src={facebook} className="w-7 h-7" />
                     <a href="https://www.facebook.com/monggaindonesia/">
                       @monggaindonesia
                     </a>

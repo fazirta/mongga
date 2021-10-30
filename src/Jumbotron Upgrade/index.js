@@ -1,4 +1,3 @@
-import hero from "../img/dasdasdassda 1.png";
 import logo from "../img/upgrade 1.png";
 
 export default function JumbotronHijau(props) {
@@ -19,9 +18,9 @@ export default function JumbotronHijau(props) {
             </div>
           </div>
           <div>
-            <img className="" src={logo} />
+            <img alt="" className="" src={logo} />
           </div>
-       </div>
+        </div>
       </div>
     </>
   );
