@@ -10,7 +10,8 @@ import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
 import CardPersegiPanjang from "../Card Persegi Panjang";
 import Jumbotron from "../Jumbotron";
-import hero from "../img/NEWLAND 6.png";
+import hero from "../img/621429.png";
+import logo from "../img/MONGGA LOGO WHITEE 1.png";
 import online from "../img/online gr 1.png";
 import leader from "../img/leader 1.png";
 import crowd from "../img/crowd 1.png";
@@ -57,7 +58,13 @@ export default function LandingPage() {
 
   return (
     <>
-      <Jumbotron href="/produk" src={hero} setLoaded={setLoaded} />
+      <Jumbotron
+        href="/produk"
+        src={hero}
+        src1={logo}
+        title="Partner Kamu untuk Jadi Seorang Pemenang!"
+        setLoaded={setLoaded}
+      />
       <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
         <div className="md:px-32 lg:px-72">
           <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
