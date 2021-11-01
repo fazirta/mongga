@@ -14,7 +14,7 @@ export default function ContactUs() {
         desc="Untuk kamu yang butuh bantuan atau mau bekerjasama dengan kami"
       />
       <div className="my-20 px-3 max-w-7xl mx-auto">
-        <div className="font-poppins py-10">
+        <div className="font-poppins py-10 text-center sm:text-left">
           <Heading1
             value="Punya pertanyaan mengenai produk kami?"
             position="text-center"
