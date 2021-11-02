@@ -3,7 +3,13 @@ import Heading1 from "../Heading1";
 import Heading2 from "../Heading2";
 import Paragraph1 from "../Paragraph1";
 import JumbotronHijau from "../Jumbotron Hijau";
+import MentorItem from "../MentorItem";
 import pic_awla from "../img/profile-awla.png";
+import pic_faqihah from "../img/profile-faqihah.png";
+import pic_hilya from "../img/profile-hilya.png";
+import pic_yudha from "../img/profile-yudha.png";
+import pic_christ from "../img/profile-christ.png";
+import pic_anju from "../img/profile-anju.png";
 import decor_star from "../img/decoration-star.png";
 
 export default function Mentor() {
@@ -22,18 +28,60 @@ export default function Mentor() {
         </div>
       </div>
 
-      <div className="flex flex-row">
-        <div className="flex-col border-2 rounded-full border-green-700 relative">
-          <img className="absolute right-0" src={decor_star} />
-          <img className="rounded-full p-2" src={pic_awla} />
-        </div>
-        <div className="flex-col self-center pl-2">
-          <div className="flex-row">
-            <Heading2 value="Awla Fajri Assalam" />
+      <div className="container mx-auto">
+        <div className="flex flex-row justify-around">
+          <div className="flex-col md:w-full">
+            <MentorItem
+              pic={pic_awla}
+              name="Awla Fajri Assalam"
+              bio1="Founder Organisasi Riset Solve-IT ITB"
+              bio2="Wisudawan Terbaik FMIPA ITB 2021"
+            />
           </div>
-          <div className="flex-row">
-            <Paragraph1 value="Founder Organisasi Riset Solve-IT ITB" />
-            <Paragraph1 value="Wisudawan Terbaik FMIPA ITB 2021" />
+          <div className="flex-col md:w-full">
+            <MentorItem
+              pic={pic_faqihah}
+              name="Faqihah Muharroroh Itsnaini"
+              bio1="Moderator of University through National Scale Events"
+              bio2="Digital Journalist Intern at Detik.com"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row pt-24 justify-around">
+          <div className="flex-col">
+            <MentorItem
+              pic={pic_hilya}
+              name="Hilyatushalihah Kholis Audah, BSc"
+              bio1="Founder of Gwel Academy"
+              bio2="First Class Honours Bachelor In Psychology with Neuropsychology of Bangor University"
+            />
+          </div>
+          <div className="flex-col">
+            <MentorItem
+              pic={pic_yudha}
+              name="Maha Yudha Samawi"
+              bio1="Gold Medalist PKM-KC 2020"
+              bio2=""
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-row pt-24 justify-around">
+          <div className="flex-col">
+            <MentorItem
+              pic={pic_christ}
+              name="Christ Panogari"
+              bio1="President of English Speaking Union"
+              bio2=""
+            />
+          </div>
+          <div className="flex-col">
+            <MentorItem
+              pic={pic_anju}
+              name="Anju Ikhsan"
+              bio1="Gold Medal Olimpiade Sains Indonesia bidang biologi mahasiswa"
+              bio2="Bronze Medal Kompetisi Sains Pengajar IPA Mts & Biologi MA2021 Posi"
+            />
           </div>
         </div>
       </div>
