@@ -19,10 +19,10 @@ export default function JumbotronHijau(props) {
             <div className="flex-1"></div>
           </div>
         </div>
-        <img  alt=""
+        <img
+          alt="banner mongga"
           className="h-60 md:h-auto w-full object-cover"
           src={hero}
-          alt="banner mongga"
         />
       </div>
     </>

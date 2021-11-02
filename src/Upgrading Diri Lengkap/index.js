@@ -1,7 +1,6 @@
 import JumbotronHijau from "../Jumbotron Upgrade";
 import Heading1 from "../Heading1";
 import Paragraph1 from "../Paragraph1";
-import Test from "../img/test.png";
 import EnglishDebate from "../img/English Debate.png";
 import Excel from "../img/Excel.png";
 import IELTS from "../img/IELTS.png";
@@ -26,37 +25,44 @@ export default function UpgradingDiri() {
         <JumbotronHijau
           name="Upgrading Diri"
           desc="Akses ilmu-ilmu hardskill secara tanpa batas dan tanpa hambatan. Yuk belajar ilmu baru di Mongga Belajar!"
-        />  
+        />
       </div>
-      
+
       <div className="my-14 px-3 max-w-7xl mx-auto">
         <div>
-          <a href="">
-            <Paragraph1
-              value="< Upgrading Diri"
-            />
+          <a href="/">
+            <Paragraph1 value="< Upgrading Diri" />
           </a>
           <div className="my-10">
-            <Heading1 value="Sekarang kamu bisa tahu apa yang mereka tahu di kelas umum ini!" position="text-center md:px-32 xl:px-52"/>
+            <Heading1
+              value="Sekarang kamu bisa tahu apa yang mereka tahu di kelas umum ini!"
+              position="text-center md:px-32 xl:px-52"
+            />
           </div>
         </div>
 
         <div>
           <div className="flex mt-32 mb-10 lg:justify-start justify-center">
-            <h1 class="font-poppins font-bold text-xl text-darkgreen p-5 bg-yellow-300">KELAS 1 Arah</h1>
+            <h1 class="font-poppins font-bold text-xl text-darkgreen p-5 bg-yellow-300">
+              KELAS 1 Arah
+            </h1>
           </div>
         </div>
 
         <div class="mt-16">
-            <h2 class="font-poppins font-bold text-darkgreen text-2xl">Mongga Short Class #2 Series: Sharpen Your Skills</h2>
+          <h2 class="font-poppins font-bold text-darkgreen text-2xl">
+            Mongga Short Class #2 Series: Sharpen Your Skills
+          </h2>
         </div>
 
         <div class="flex md:justify-around flex-wrap">
-        <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
+          <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={EnglishDebate} />
+              <img alt="" className="" src={EnglishDebate} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">English Debate: Creating A Powerful Speech</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              English Debate: Creating A Powerful Speech
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 25.000</p>
@@ -65,9 +71,11 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Excel} />
+              <img alt="" className="" src={Excel} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Excel Your Research Essay Competition</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Excel Your Research Essay Competition
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 35.000</p>
@@ -76,60 +84,80 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={ContentWriting} />
+              <img alt="" className="" src={ContentWriting} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Introduction to Content Writing</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Introduction to Content Writing
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 30.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Faqihah Muharroroh Itsnaini</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Faqihah Muharroroh Itsnaini
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={StudyAbroad} />
+              <img alt="" className="" src={StudyAbroad} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Guide to Study Abroad</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Guide to Study Abroad
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 40.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Hilyatushalihah Kholis Audah, BSc</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Hilyatushalihah Kholis Audah, BSc
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={PublicSpeaking} />
+              <img alt="" className="" src={PublicSpeaking} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Master Public Speaking</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Master Public Speaking
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 20.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Faqihah Muharroroh Itsnaini</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Faqihah Muharroroh Itsnaini
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={IELTS} />
+              <img alt="" className="" src={IELTS} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Ace Your IELTS</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Ace Your IELTS
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 45.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Hilyatushalihah Kholis Audah, BSc</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Hilyatushalihah Kholis Audah, BSc
+            </p>
           </div>
         </div>
 
         <div class="mt-16">
-            <h2 class="font-poppins font-bold text-darkgreen text-2xl">Mongga Short Class #1 Series: How to Do Better in College</h2>
+          <h2 class="font-poppins font-bold text-darkgreen text-2xl">
+            Mongga Short Class #1 Series: How to Do Better in College
+          </h2>
         </div>
 
         <div class="flex md:justify-around flex-wrap">
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Ideas} />
+              <img alt="" className="" src={Ideas} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Critical Thinking for Research</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Critical Thinking for Research
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 20.000</p>
@@ -138,31 +166,41 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Essay} />
+              <img alt="" className="" src={Essay} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Research for Academic Essays and Competitions</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Research for Academic Essays and Competitions
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 30.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Gardin Muhammad Anandika Saputra</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Gardin Muhammad Anandika Saputra
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Thesis} />
+              <img alt="" className="" src={Thesis} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Research and Statistics for Bachelor Thesis </p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Research and Statistics for Bachelor Thesis{" "}
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 35.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Hilyatushalihah Kholis Audah, BSc</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Hilyatushalihah Kholis Audah, BSc
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Presentation} />
+              <img alt="" className="" src={Presentation} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Presentation for Competitions and Formal Purposes</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Presentation for Competitions and Formal Purposes
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 30.000</p>
@@ -171,38 +209,50 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={PublicSpeaking101} />
+              <img alt="" className="" src={PublicSpeaking101} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Public Speaking Skills 101</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Public Speaking Skills 101
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 20.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Faqihah Muharroroh Itsnaini</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Faqihah Muharroroh Itsnaini
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={IELTS101} />
+              <img alt="" className="" src={IELTS101} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">IELTS Preparation 101</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              IELTS Preparation 101
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Short Class</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 35.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Hilyatushalihah Kholis Audah, BSc</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Hilyatushalihah Kholis Audah, BSc
+            </p>
           </div>
         </div>
 
         <div class="mt-16">
-            <h2 class="font-poppins font-bold text-darkgreen text-2xl">Mongga Grow Series</h2>
+          <h2 class="font-poppins font-bold text-darkgreen text-2xl">
+            Mongga Grow Series
+          </h2>
         </div>
 
         <div class="flex md:justify-around flex-wrap">
-        <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
+          <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Kotlin} />
+              <img alt="" className="" src={Kotlin} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Android Development for Beginner Using Kotlin</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Android Development for Beginner Using Kotlin
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Bootcamp</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 160.000</p>
@@ -211,20 +261,26 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Unity2D} />
+              <img alt="" className="" src={Unity2D} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Game Development for Beginner Using Unity2D</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Game Development for Beginner Using Unity2D
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Bootcamp</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 160.000</p>
             </div>
-            <p class="font-poppins text-darkgreen mt-5">Rifa Muhammad Ma'aruf</p>
+            <p class="font-poppins text-darkgreen mt-5">
+              Rifa Muhammad Ma'aruf
+            </p>
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Python} />
+              <img alt="" className="" src={Python} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Python for Data Science: Beginner Level</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Python for Data Science: Beginner Level
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Bootcamp</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 160.000</p>
@@ -233,9 +289,11 @@ export default function UpgradingDiri() {
           </div>
           <div class="lg:w-1/4 md:w-1/3 md:mx-2 mx-5 my-10">
             <div class="">
-            <img className="" src={Website} />
+              <img alt="" className="" src={Website} />
             </div>
-            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">Fullstack Website Development for Beginner Using Laravel</p>
+            <p class="font-poppins font-bold text-xl text-darkgreen mt-5">
+              Fullstack Website Development for Beginner Using Laravel
+            </p>
             <div class="flex justify-between md:flex-row mt-5">
               <p class="font-poppins text-darkgreen">Bootcamp</p>
               <p class="font-poppins font-bold text-darkgreen">Rp. 160.000</p>

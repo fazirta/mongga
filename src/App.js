@@ -1,9 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import "./App.css"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import LandingPage from "./Landing Page";
@@ -24,54 +20,56 @@ import Aktivitas7 from "./Aktivitas 7";
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/testimoni">
-            <Testimoni />
-          </Route>
-          <Route path="/mentor">
-            <Mentor />
-          </Route>
-          <Route path="/aktivitas/5">
-            <Aktivitas5 />
-          </Route>
-          <Route path="/aktivitas/6">
-            <Aktivitas6 />
-          </Route>
-          <Route path="/aktivitas/7">
-            <Aktivitas7 />
-          </Route>
-          <Route path="/aktivitas">
-            <Aktivitas />
-          </Route>
-          <Route path="/produk/kompetisi">
-            <Kompetisi />
-          </Route>
-          <Route path="/produk">
-            <Produk />
-          </Route>
-          <Route path="/aboutus">
-            <AboutUs />
-          </Route>
-          <Route path="/contactus">
-            <ContactUs />
-          </Route>
-          <Route path="/komunitas">
-            <Komunitas />
-          </Route>
-          <Route path="/upgrading">
-            <UpgradingDiri />
-          </Route>
-          <Route path="/upgradinglengkap">
-            <UpgradingDiriLengkap />
-          </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
+      <Navbar />
+      <main>
+        <Router>
+          <Switch>
+            <Route path="/testimoni">
+              <Testimoni />
+            </Route>
+            <Route path="/mentor">
+              <Mentor />
+            </Route>
+            <Route path="/aktivitas/5">
+              <Aktivitas5 />
+            </Route>
+            <Route path="/aktivitas/6">
+              <Aktivitas6 />
+            </Route>
+            <Route path="/aktivitas/7">
+              <Aktivitas7 />
+            </Route>
+            <Route path="/aktivitas">
+              <Aktivitas />
+            </Route>
+            <Route path="/produk/kompetisi">
+              <Kompetisi />
+            </Route>
+            <Route path="/produk">
+              <Produk />
+            </Route>
+            <Route path="/aboutus">
+              <AboutUs />
+            </Route>
+            <Route path="/contactus">
+              <ContactUs />
+            </Route>
+            <Route path="/komunitas">
+              <Komunitas />
+            </Route>
+            <Route path="/upgrading">
+              <UpgradingDiri />
+            </Route>
+            <Route path="/upgradinglengkap">
+              <UpgradingDiriLengkap />
+            </Route>
+            <Route path="/">
+              <LandingPage />
+            </Route>
+          </Switch>
+        </Router>
+      </main>
+      <Footer />
     </>
   );
 }

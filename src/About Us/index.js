@@ -63,7 +63,8 @@ export default function AboutUs() {
             </h1>
             <div className="flex flex-wrap justify-center align-center">
               <div className="flex mt-10 space-x-5 md:space-x-10 max-w-xl px-5 py-2">
-                <img alt=""
+                <img
+                  alt=""
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Teacher1}
                 />
@@ -73,7 +74,8 @@ export default function AboutUs() {
                 </h1>
               </div>
               <div className="flex mt-10 space-x-5 md:space-x-10 max-w-xl px-5 py-2">
-                <img alt=""
+                <img
+                  alt=""
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Competence1}
                 />
@@ -83,7 +85,8 @@ export default function AboutUs() {
                 </h1>
               </div>
               <div className="flex mt-10 space-x-5 md:space-x-10 max-w-xl px-5 py-2">
-                <img alt=""
+                <img
+                  alt=""
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Conversation1}
                 />
@@ -92,7 +95,8 @@ export default function AboutUs() {
                 </h1>
               </div>
               <div className="flex mt-10 space-x-5 md:space-x-10 max-w-xl px-5 py-2">
-                <img alt=""
+                <img
+                  alt=""
                   className="w-20 h-20 md:w-32 md:h-32 object-cover"
                   src={Overpopulation1}
                 />
@@ -120,10 +124,11 @@ export default function AboutUs() {
             </h2>
           </div>
           <div className="flex align-center justify-center flex-col">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group162}
-              />
+            />
             <h1 className="font-poppins text-darkgreen font-semibold self-center text-center mt-5">
               Awla Fajri Assalam
               <br />
@@ -136,10 +141,11 @@ export default function AboutUs() {
         <Heading1 value="Tim Kami" position="text-center" />
         <div className="flex justify-center flex-wrap mt-10">
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group158}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Bondi Pratama
               <br />
@@ -147,10 +153,11 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Blob3}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Hilyatushalihah K. Audah
               <br />
@@ -158,10 +165,11 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group161}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Hiromi Elevenia D.
               <br />
@@ -169,10 +177,11 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group159}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Ahmad Aji Naufal Ali
               <br />
@@ -180,10 +189,11 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group160}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Rosalina Fajriani
               <br />
@@ -191,10 +201,11 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
-            <img alt=""
+            <img
+              alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
               src={Group157}
-              />
+            />
             <h1 className="font-poppins text-darkgreen self-center text-center mt-5 max-w-xs">
               Nurul Afra
               <br />
@@ -204,12 +215,13 @@ export default function AboutUs() {
         </div>
       </div>
       <div>
-        <img alt="" src={Divider} />
+        <img alt="" src={Divider} className="w-full" />
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
           <div>
-            <img alt=""
+            <img
+              alt=""
               className="w-40 h-40 lg:w-80 lg:h-80 object-cover rounded-2xl"
               src={Mentor}
             />
