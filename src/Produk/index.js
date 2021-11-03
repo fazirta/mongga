@@ -1,6 +1,5 @@
 import ButtonHijau from "../Button Hijau";
 import Heading1 from "../Heading1";
-import Paragraph1 from "../Paragraph1";
 import Grid from "../Grid";
 import ImgKompetisi from "../img/produk-kompetisi.png";
 import ImgUpgrading from "../img/produk-upgrading.png";

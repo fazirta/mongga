@@ -1,9 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import "./App.css"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import LandingPage from "./Landing Page";
@@ -13,6 +9,8 @@ import ContactUs from "./Contact Us";
 import Komunitas from "./Komunitas";
 import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
+import UpgradingDiri from "./Upgrading Diri";
+import UpgradingDiriLengkap from "./Upgrading Diri Lengkap";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
 import Aktivitas1 from "./Aktivitas 1";

@@ -16,7 +16,10 @@ export default function ContactUs() {
             position="text-center"
           />
           <div className="flex items-center justify-center text-sm py-6">
-            <ButtonHijau href="https://api.whatsapp.com/send?phone=6289609728606&text=Halo+admin%2C+Saya+ingin+konsultasi+tentang+produk+mongga&app_absent=0" text="Chat melalui WA" />
+            <ButtonHijau
+              href="https://api.whatsapp.com/send?phone=6289609728606&text=Halo+admin%2C+Saya+ingin+konsultasi+tentang+produk+mongga&app_absent=0"
+              text="Chat melalui WA"
+            />
           </div>
           <p className="flex items-center justify-center text-base md:text-xl lg:text-2xl font-semibold">
             atau hubungi kami melalui{" "}
@@ -35,7 +38,10 @@ export default function ContactUs() {
           />
 
           <div className="flex items-center justify-center text-sm py-6">
-            <ButtonHijau href="https://t.me/joinchat/-FYL91EUszBmZGQ1" text="Gabung di telegram" />
+            <ButtonHijau
+              href="https://t.me/joinchat/-FYL91EUszBmZGQ1"
+              text="Gabung di telegram"
+            />
           </div>
         </div>
       </div>
