@@ -1,12 +1,12 @@
-import Heading1 from "../Heading1";
-import Apprenticeship from "../img/Apprenticeship.png";
-import Webinar from "../img/Webinar.png";
-import OpenClass from "../img/OpenClass.png";
-import Olimpiade from "../img/OlimMts.png";
-import Workshop from "../img/Workshop.png";
-import ShortClass from "../img/ShortClass.png";
-import Bootcamp from "../img/Bootcamp.png";
-import GambarAktivitas from "../Gambar Aktivitas";
+import Heading1 from '../Heading1';
+import Apprenticeship from '../img/Apprenticeship.png';
+import Webinar from '../img/Webinar.png';
+import OpenClass from '../img/OpenClass.png';
+import Olimpiade from '../img/PelatihanOlim.png';
+import Workshop from '../img/Workshop.png';
+import ShortClass from '../img/ShortClass.png';
+import Bootcamp from '../img/Bootcamp.png';
+import GambarAktivitas from '../Gambar Aktivitas';
 
 export default function Aktivitas() {
   return (
@@ -24,39 +24,47 @@ export default function Aktivitas() {
         <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center lg:justify-between">
             <div className="p-5 lg:p-10">
-              <GambarAktivitas src={Apprenticeship} position="left" />
-              <div>
-                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                  Apprenticeship
-                </p>
-              </div>
+              <a href="/aktivitas/apprenticeship">
+                <GambarAktivitas src={Apprenticeship} position="left" />
+                <div>
+                  <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                    Apprenticeship
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="p-5 lg:p-10">
-              <GambarAktivitas src={Webinar} position="left" />
-              <div>
-                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                  Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
-                </p>
-              </div>
+              <a href="/aktivitas/webinar">
+                <GambarAktivitas src={Webinar} position="left" />
+                <div>
+                  <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                    Webinar #1 : Kontras Kuliah Dalam dan Luar Negeri
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="p-5 lg:p-10">
-              <GambarAktivitas src={OpenClass} position="left" />
-              <div>
-                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                  Open Class : Basic
-                </p>
-              </div>
+              <a href="/aktivitas/open-class">
+                <GambarAktivitas src={OpenClass} position="left" />
+                <div>
+                  <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                    Open Class : Basic
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="p-5 lg:p-10">
-              <GambarAktivitas src={Olimpiade} position="left" />
-              <div>
-                <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
-                  Pelatihan Olimpiade MTsN 3 Jakarta
-                </p>
-              </div>
+              <a href="/aktivitas/pelatihan-olimpiade">
+                <GambarAktivitas src={Olimpiade} position="left" />
+                <div>
+                  <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
+                    Pelatihan Olimpiade MTsN 3 Jakarta
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="p-5 lg:p-10">
-              <a href="/aktivitas/5">
+              <a href="/aktivitas/workshop">
                 <GambarAktivitas src={Workshop} position="left" />
                 <div>
                   <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
@@ -66,7 +74,7 @@ export default function Aktivitas() {
               </a>
             </div>
             <div className="p-5 lg:p-10">
-              <a href="/aktivitas/6">
+              <a href="/aktivitas/short-class">
                 <GambarAktivitas src={ShortClass} position="left" />
                 <div>
                   <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
@@ -76,7 +84,7 @@ export default function Aktivitas() {
               </a>
             </div>
             <div className="p-5 lg:p-10">
-              <a href="/aktivitas/7">
+              <a href="/aktivitas/bootcamp">
                 <GambarAktivitas src={Bootcamp} position="left" />
                 <div>
                   <p className="font-bold text-darkgreen md:text-xl lg:text-2x1 font-poppins max-w-xs lg:max-w-sm">
