@@ -1,7 +1,6 @@
 import ButtonHijau from "../Button Hijau";
 import Heading1 from "../Heading1";
 
-
 export default function Mentor() {
   return (
     <>

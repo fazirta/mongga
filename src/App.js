@@ -1,9 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import "./App.css"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import LandingPage from "./Landing Page";
@@ -17,6 +13,10 @@ import UpgradingDiri from "./Upgrading Diri";
 import UpgradingDiriLengkap from "./Upgrading Diri Lengkap";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
+import Aktivitas1 from "./Aktivitas 1";
+import Aktivitas2 from "./Aktivitas 2";
+import Aktivitas3 from "./Aktivitas 3";
+import Aktivitas4 from "./Aktivitas 4";
 import Aktivitas5 from "./Aktivitas 5";
 import Aktivitas6 from "./Aktivitas 6";
 import Aktivitas7 from "./Aktivitas 7";
@@ -33,13 +33,25 @@ function App() {
           <Route path="/mentor">
             <Mentor />
           </Route>
-          <Route path="/aktivitas/5">
+          <Route path="/aktivitas/apprenticeship">
+            <Aktivitas1 />
+          </Route>
+          <Route path="/aktivitas/webinar">
+            <Aktivitas2 />
+          </Route>
+          <Route path="/aktivitas/open-class">
+            <Aktivitas3 />
+          </Route>
+          <Route path="/aktivitas/pelatihan-olimpiade">
+            <Aktivitas4 />
+          </Route>
+          <Route path="/aktivitas/workshop">
             <Aktivitas5 />
           </Route>
-          <Route path="/aktivitas/6">
+          <Route path="/aktivitas/short-class">
             <Aktivitas6 />
           </Route>
-          <Route path="/aktivitas/7">
+          <Route path="/aktivitas/bootcamp">
             <Aktivitas7 />
           </Route>
           <Route path="/aktivitas">
@@ -59,12 +71,6 @@ function App() {
           </Route>
           <Route path="/komunitas">
             <Komunitas />
-          </Route>
-          <Route path="/upgrading">
-            <UpgradingDiri />
-          </Route>
-          <Route path="/upgradinglengkap">
-            <UpgradingDiriLengkap />
           </Route>
           <Route path="/">
             <LandingPage />
