@@ -13,6 +13,10 @@ export default function ContactUs() {
         name="Hubungi Kami"
         desc="Untuk kamu yang butuh bantuan atau mau bekerjasama dengan kami"
       />
+      <Heading1
+            value="Test Vercel"
+            position="text-center"
+          />
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="font-poppins py-10 text-center sm:text-left">
           <Heading1
