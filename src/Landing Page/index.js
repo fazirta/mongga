@@ -3,14 +3,15 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import ButtonHijau from "../Button Hijau";
 import CardPersegi from "../Card Persegi";
 import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
 import CardPersegiPanjang from "../Card Persegi Panjang";
 import Jumbotron from "../Jumbotron";
-import hero from "../img/NEWLAND 6.png";
+import hero from "../img/621429.png";
+import logo from "../img/MONGGA LOGO WHITEE 1.png";
 import online from "../img/online gr 1.png";
 import leader from "../img/leader 1.png";
 import crowd from "../img/crowd 1.png";
@@ -50,14 +51,20 @@ export default function LandingPage() {
   useEffect(() => {
     if (loaded) {
       Aos.init({
-        once: true
-      })
+        once: true,
+      });
     }
   }, [loaded]);
 
   return (
     <>
-      <Jumbotron href="/produk" src={hero} setLoaded={setLoaded} />
+      <Jumbotron
+        href="/produk"
+        src={hero}
+        src1={logo}
+        title="Partner Kamu untuk Jadi Seorang Pemenang!"
+        setLoaded={setLoaded}
+      />
       <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
         <div className="md:px-32 lg:px-72">
           <h1 className="font-bold text-3xl lg:text-4xl text-darkgreen text-center font-poppins">
@@ -102,17 +109,17 @@ export default function LandingPage() {
       </div>
       <div className="relative mt-20 overflow-x-hidden">
         <div className="flex justify-center">
-          <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row flex-row align-center">
+          <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row align-center">
             <div className="JuaraText flex flex-col justify-center">
               <div className="mx-auto">
                 <h1
-                  className="font-poppins text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
+                  className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
                   style={{ lineHeight: "1.16" }}
                 >
                   Kejar dan <br />
                   Raih Juaramu!
                 </h1>
-                <h2 className="font-poppins text-white text-sm md:text-xl lg:text-2xl font-light font-poppins">
+                <h2 className="text-white text-sm md:text-xl lg:text-2xl font-light font-poppins">
                   Dorong kemampuan diri dan jadilah juara sekarang!
                 </h2>
               </div>
@@ -136,10 +143,10 @@ export default function LandingPage() {
             </Swiper>
           </div>
         </div>
-        <img alt=""
+        <img
+          alt=""
           className="h-96 md:h-auto w-full object-cover"
           src={Component24}
-          alt=""
         />
       </div>
       <div className="mt-10 py-10 max-w-7xl mx-auto px-3">
@@ -190,12 +197,17 @@ export default function LandingPage() {
             <CardPersegi title="Seminar Motivasi" src={Group243} />
           </SwiperSlide>
         </Swiper>
-        <ButtonHijau dataAOS="zoom-in" href="/produk" text="Pelajari Selengkapnya" />
+        <ButtonHijau
+          dataAOS="zoom-in"
+          href="/produk"
+          text="Pelajari Selengkapnya"
+        />
       </div>
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
           <div>
-            <img alt=""
+            <img
+              alt=""
               className="w-48 h-40 lg:w-96 lg:h-80 object-cover rounded-2xl"
               src={student5540227_19201}
             />
@@ -207,8 +219,7 @@ export default function LandingPage() {
             >
               Ingin melanjutkan studi ke luar negeri?
             </a>
-            <p
-              className="font-poppins text-darkgreen max-w-sm mt-8">
+            <p className="font-poppins text-darkgreen max-w-sm mt-8">
               Persiapkan dirimu di Study Abroad bersama Mongga!
             </p>
             <div className="flex my-5">
@@ -251,13 +262,13 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <GambarAktivitas src={img263699} />
+              <GambarAktivitas src={img263699} position="right" />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263686} />
+              <GambarAktivitas src={img263686} position="right" />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263684} />
+              <GambarAktivitas src={img263684} position="right" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -323,36 +334,68 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto mt-10">
           <div className="flex max-w-5xl flex-wrap mx-auto justify-center">
             <div className="p-4 md:p-8">
-              <img data-aos="fade-up" alt="" src={sman11jakarta} />
+              <img alt="" data-aos="fade-up" src={sman11jakarta} />
             </div>
             <div data-aos="zoom-in-up" data-aos-delay="" className="p-4 md:p-8">
               <img alt="" src={Group194} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="100" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image_1} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="200" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="200"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={sman29jakartaremovebgpreview1} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="300" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image2} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="400" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="400"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image1} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="500" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="500"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image3} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="600" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="600"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image_2} />
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="700" className="p-4 md:p-8">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="700"
+              className="p-4 md:p-8"
+            >
               <img alt="" src={image} />
             </div>
           </div>
         </div>
         <div className="mt-5">
-          <h1 data-aos="zoom-in-up" data-aos-delay="600" className="font-bold text-gray-500 font-poppins text-xl text-center">
+          <h1
+            data-aos="zoom-in-up"
+            data-aos-delay="600"
+            className="font-bold text-gray-500 font-poppins text-xl text-center"
+          >
             Dan masih banyak lagi!
           </h1>
         </div>
@@ -367,7 +410,11 @@ export default function LandingPage() {
             Jangan ragu untuk bertanya dan silahkan hubungi kami lewat tombol
             dibawah ini
           </h2>
-          <ButtonHijau dataAOS="zoom-in" href="/contactus" text="Hubungi Kami" />
+          <ButtonHijau
+            dataAOS="zoom-in"
+            href="/contactus"
+            text="Hubungi Kami"
+          />
         </div>
       </div>
     </>
