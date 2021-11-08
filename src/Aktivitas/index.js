@@ -1,12 +1,12 @@
-import Heading1 from '../Heading1';
-import Apprenticeship from '../img/Apprenticeship.png';
-import Webinar from '../img/Webinar.png';
-import OpenClass from '../img/OpenClass.png';
-import Olimpiade from '../img/PelatihanOlim.png';
-import Workshop from '../img/Workshop.png';
-import ShortClass from '../img/ShortClass.png';
-import Bootcamp from '../img/Bootcamp.png';
-import GambarAktivitas from '../Gambar Aktivitas';
+import Heading1 from "../Heading1";
+import Apprenticeship from "../img/Apprenticeship.png";
+import Webinar from "../img/Webinar.png";
+import OpenClass from "../img/OpenClass.png";
+import Olimpiade from "../img/PelatihanOlim.png";
+import Workshop from "../img/Workshop.png";
+import ShortClass from "../img/ShortClass.png";
+import Bootcamp from "../img/Bootcamp.png";
+import GambarAktivitas from "../Gambar Aktivitas";
 
 export default function Aktivitas() {
   return (
