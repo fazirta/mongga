@@ -76,7 +76,7 @@ export default function LandingPage() {
             title="Mentor Berpengalaman dan Berkualitas di bidangnya"
             link="Mentor Kami >"
             src={leader}
-            href="/aktivitas"
+            href="/mentor"
           />
           <CardPersegiPanjang
             dataAOS="zoom-in-up"
@@ -84,7 +84,7 @@ export default function LandingPage() {
             title="Telah digunakan dan dibuktikan oleh banyak orang"
             link="Testimoni >"
             src={crowd}
-            href="/aktivitas"
+            href="/testimoni"
           />
         </div>
       </div>
