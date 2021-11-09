@@ -196,12 +196,14 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="my-10" style={{ background: "#D2D8CE" }}>
+      <div className="my-10">
         <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
           <div className="flex justify-center">
-            <h1 className="text-darkgreen font-bold text-xl font-poppins border-b-4 border-yellow-400 pb-2">
-              Aktivitas Terkini{" "}
-            </h1>
+            <a href="/aktivitas">
+              <h1 className="text-darkgreen font-bold text-2xl font-poppins border-b-4 border-darkgreen pb-2 underline">
+                Aktivitas Terkini >
+              </h1>
+            </a>
           </div>
           <Swiper
             data-aos="fade-up"
