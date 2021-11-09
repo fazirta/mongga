@@ -11,7 +11,7 @@ import pic_hilya from "../img/profile-hilya.png";
 import pic_yudha from "../img/profile-yudha.png";
 import pic_christ from "../img/profile-christ.png";
 import pic_anju from "../img/profile-anju.png";
-import decor_star from "../img/decoration-star.png";
+// import decor_star from "../img/decoration-star.png";
 
 export default function Mentor() {
   return (

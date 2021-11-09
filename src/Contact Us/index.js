@@ -55,24 +55,24 @@ export default function ContactUs() {
             <div className="flex justify-center">
               <div className="bg-darkgreen rounded-large px-4 py-3 transition duration-300 ease-in-out font-poppins shadow-2xl">
                 <div class="flex flex-col lg:flex-row items-center content-center px-7">
-                  <img className="m-5 lg:mr-10" src={ContactUsLogo} />
+                  <img alt="" className="m-5 lg:mr-10" src={ContactUsLogo} />
                   <div>
                     <p class="text-white text-xl text-center font-semibold mb-4 text-yellow-300">Kunjungi Sosial Media Kami</p>
                     <div>
                       <div class="grid grid-cols-7 mb-2">
-                        <img className="place-self-end col-span-2 mr-2" src={Instagram} />
+                        <img alt="" className="place-self-end col-span-2 mr-2" src={Instagram} />
                         <div class="place-self-start col-span-5 py-1.5">
                           <p class="text-white font-semibold pl-2">mongga_indonesia</p>
                         </div>
                       </div>
                       <div class="grid grid-cols-7 mb-2">
-                        <img className="place-self-end col-span-2 mr-2" src={Linkedin} />
+                        <img alt="" className="place-self-end col-span-2 mr-2" src={Linkedin} />
                         <div class="place-self-start col-span-5 py-1.5">
                           <p class="text-white font-semibold pl-2">Mongga Indonesia</p>
                         </div>
                       </div>
                       <div class="grid grid-cols-7 mb-2">
-                        <img className="place-self-end col-span-2 mr-2" src={Facebook} />
+                        <img alt="" className="place-self-end col-span-2 mr-2" src={Facebook} />
                         <div class="place-self-start col-span-5 py-1.5">
                           <p class="text-white font-semibold pl-2">@monggaindonesia</p>
                         </div>
