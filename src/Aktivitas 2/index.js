@@ -19,10 +19,10 @@ export default function Aktivitas2() {
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
                 <div className="flex flex-wrap justify-around xl:justify-between">
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Webinar1} />
+                        <img alt="" className="w-96 xl:w-auto" src={Webinar1} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Webinar2} />
+                        <img alt="" className="w-96 xl:w-auto" src={Webinar2} />
                     </div>
                 </div>
             </div>

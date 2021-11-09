@@ -1,6 +1,6 @@
 import Paragraph1 from "../Paragraph1";
 import Heading2 from "../Heading2";
-import decor_star from "../img/decoration-star.png";
+// import decor_star from "../img/decoration-star.png";
 
 export default function MentorItem2(props) {
   return (

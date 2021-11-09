@@ -26,6 +26,14 @@ export default function GambarAktivitas(props) {
             />
             <div className="z-0 absolute right-0 bottom-0 bg-palegreen rounded-xl lg:rounded-3xl w-11/12 h-full"></div>
           </div>
+          <div className="mt-5">
+            <h1 className="text-center font-bold font-poppins text-xl text-darkgreen">
+              Judul Kegiatan
+            </h1>
+            <h2 className="text-center font-bold font-poppins text-sm text-palegreen">
+              Tanggal Kegiatan
+            </h2>
+          </div>
         </div>
       </>
     );
