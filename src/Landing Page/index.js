@@ -24,9 +24,9 @@ import image1 from "../img/image1.png";
 import image3 from "../img/image-3.png";
 import image_2 from "../img/image-2.png";
 import image from "../img/image.png";
+import dafina2 from "../img/dafina 2.png";
 import asdasd1 from "../img/asdasd 1.png";
 import dafbmm1 from "../img/dafbmm 1.png";
-import Group199 from "../img/Group 199.png";
 import img263684 from "../img/263684.png";
 import img263686 from "../img/263686.png";
 import img263699 from "../img/263699.png";
@@ -248,43 +248,31 @@ export default function LandingPage() {
           data-aos="fade-up"
           className="max-w-full my-10"
           spaceBetween={0}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 2,
-            },
-            1080: {
-              slidesPerView: 3,
-            },
-          }}
           autoplay={true}
+          navigation={true}
+          slidesPerView={1}
         >
-          <SwiperSlide>
+          <SwiperSlide className="flex justify-center">
             <CardReview
-              src={asdasd1}
-              name="Narga Naraya Andono"
-              course="Kelas Videografi"
-              review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”"
+              src={dafina2}
+              name="Dafina Farah Fatima"
+              course="Student at"
+              review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardReview
-              src={Group199}
-              name="Dafina Farah Fatima"
-              course="Kelas Programming"
-              review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”"
+              src={asdasd1}
+              name="Narga Naraya Andono"
+              course="Student at"
+              review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardReview
               src={dafbmm1}
               name="Balya Elfata"
-              course="Kelas Videografi"
+              course="Student at"
               review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“"
             />
           </SwiperSlide>
