@@ -13,10 +13,6 @@ export default function ContactUs() {
         name="Hubungi Kami"
         desc="Untuk kamu yang butuh bantuan atau mau bekerjasama dengan kami"
       />
-      <Heading1
-            value="Test Vercel"
-            position="text-center"
-          />
       <div className="my-20 px-3 max-w-7xl mx-auto">
         <div className="font-poppins py-10 text-center sm:text-left">
           <Heading1
@@ -62,19 +58,25 @@ export default function ContactUs() {
                       <div class="grid grid-cols-7 mb-2">
                         <img className="place-self-end col-span-2 mr-2" src={Instagram} />
                         <div class="place-self-start col-span-5 py-1.5">
+                          <a href="https://www.instagram.com/mongga_indonesia/">
                           <p class="text-white font-semibold pl-2">mongga_indonesia</p>
+                          </a>
                         </div>
                       </div>
                       <div class="grid grid-cols-7 mb-2">
                         <img className="place-self-end col-span-2 mr-2" src={Linkedin} />
                         <div class="place-self-start col-span-5 py-1.5">
+                          <a href="https://id.Linkedin.com/company/mongga-indonesia">
                           <p class="text-white font-semibold pl-2">Mongga Indonesia</p>
+                          </a>
                         </div>
                       </div>
                       <div class="grid grid-cols-7 mb-2">
                         <img className="place-self-end col-span-2 mr-2" src={Facebook} />
                         <div class="place-self-start col-span-5 py-1.5">
+                          <a href="https://www.facebook.com/monggaindonesia/">
                           <p class="text-white font-semibold pl-2">@monggaindonesia</p>
+                          </a>
                         </div>
                       </div>
                     </div>
