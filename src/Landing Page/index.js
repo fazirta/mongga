@@ -27,9 +27,9 @@ import image from "../img/image.png";
 import dafina2 from "../img/dafina 2.png";
 import asdasd1 from "../img/asdasd 1.png";
 import dafbmm1 from "../img/dafbmm 1.png";
-import img263684 from "../img/263684.png";
-import img263686 from "../img/263686.png";
-import img263699 from "../img/263699.png";
+import Screenshot1068 from "../img/Screenshot (1068).png";
+import Screenshot1126 from "../img/Screenshot (1126).png";
+import Screenshot1081 from "../img/Screenshot (1081).png";
 import GambarAktivitas from "../Gambar Aktivitas";
 import component28 from "../img/Component 28.png";
 import group246 from "../img/Group 246.png";
@@ -227,13 +227,30 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <GambarAktivitas src={img263699} position="right" />
+              <GambarAktivitas
+                src={Screenshot1068}
+                position="right"
+                title="Grow Series : 
+Bootcamp Programming"
+                date="14 Agustus - 14 September 2021"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263686} position="right" />
+              <GambarAktivitas
+                src={Screenshot1126}
+                position="right"
+                title="Short Class #1"
+                date="26 Juni - 11 Juli 2021"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263684} position="right" />
+              <GambarAktivitas
+                src={Screenshot1081}
+                position="right"
+                title="BESt Workshop : 
+Python for Beginners (Biomed SGU)"
+                date="4-5 Juni 2021"
+              />
             </SwiperSlide>
           </Swiper>
         </div>

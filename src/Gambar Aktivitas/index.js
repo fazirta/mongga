@@ -28,10 +28,10 @@ export default function GambarAktivitas(props) {
           </div>
           <div className="mt-5">
             <h1 className="text-center font-bold font-poppins text-xl text-darkgreen">
-              Judul Kegiatan
+              {props.title}
             </h1>
             <h2 className="text-center font-bold font-poppins text-sm text-palegreen">
-              Tanggal Kegiatan
+              {props.date}
             </h2>
           </div>
         </div>
