@@ -200,7 +200,7 @@ export default function LandingPage() {
         <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
           <div className="flex justify-center">
             <a href="/aktivitas">
-              <h1 className="text-darkgreen font-bold text-2xl font-poppins border-b-4 border-darkgreen pb-2 underline">
+              <h1 className="text-darkgreen font-bold text-3xl font-poppins pb-2">
                 Aktivitas Terkini >
               </h1>
             </a>
