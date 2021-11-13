@@ -12,9 +12,9 @@ import Group162 from "../img/Group 162.png";
 import Group158 from "../img/Group 158.png";
 import Blob3 from "../img/blob 3.png";
 import Group161 from "../img/Group 161.png";
-import Group159 from "../img/Group 159.png";
+// import Group159 from "../img/Group 159.png";
 import Group160 from "../img/Group 160.png";
-import Group157 from "../img/Group 157.png";
+// import Group157 from "../img/Group 157.png";
 import ButtonHijau from "../Button Hijau";
 
 export default function AboutUs() {
