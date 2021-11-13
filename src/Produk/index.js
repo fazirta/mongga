@@ -1,12 +1,13 @@
 import ButtonHijau from "../Button Hijau";
 import Heading1 from "../Heading1";
 import Grid from "../Grid";
-import ImgKompetisi from "../img/produk-kompetisi.png";
-import ImgUpgrading from "../img/produk-upgrading.png";
-import ImgStudyAbroad from "../img/produk-study-abroad.png";
 import ImgVector1 from "../img/product-vector-1.png";
 import ImgVector2 from "../img/product-vector-2.png";
 import ImgVector3 from "../img/product-vector-3.png";
+import Research from "../img/research.png";
+import Linguistics from "../img/linguistics.png";
+import Vektor1 from "../img/Vector1.png";
+import Medal from "../img/medal.png";
 
 export default function Produk() {
   return (
@@ -20,9 +21,9 @@ export default function Produk() {
         <Grid
           bgColor="bg-darkgreen"
           orderA="order-1"
-          icon={ImgKompetisi}
+          icon={Medal}
           orderB="order-2"
-          headingValue="Kompetisi"
+          headingValue="Kompetisi Olimpiade"
           paragraphValue="Mongga menawarkan berbagai fitur persiapan kompetisi berbasis 
         blended learning. Disini, kamu bisa mempersiapkan diri untuk kompetisi 
         secara autodidak menggunakan berbagai fitur asinkron Mongga maupun dengan 
@@ -35,9 +36,9 @@ export default function Produk() {
         <Grid
           bgColor="bg-monggagrey"
           orderA="md:order-2"
-          icon={ImgUpgrading}
+          icon={Research}
           orderB="md:order-1"
-          headingValue="Upgrading Diri"
+          headingValue="Kompetisi Riset"
           paragraphValue="Mongga menawarkan berbagai kelas skill-skill upgrading diri yang mampu
         menunjang karir kamu di masa depan nanti. Kurikulum kelas ini dirancang
         khusus oleh mentor-mentor terbaik kami demi memastikan penyampaian
@@ -50,9 +51,9 @@ export default function Produk() {
         <Grid
           bgColor="bg-darkgreen"
           orderA="order-1"
-          icon={ImgStudyAbroad}
+          icon={Linguistics}
           orderB="order-2"
-          headingValue="Study Abroad"
+          headingValue="Kompetisi Bahasa"
           paragraphValue="Buat kamu yang ingin melanjutkan studi ke luar negeri, 
         yuk persiapkan matang-matang bersama Mongga. Disini kamu bisa berkonsultasi 
         dengan fasilitator kami yang sudah berpengalaman melanjutkan studi keluar negeri. 
@@ -61,6 +62,22 @@ export default function Produk() {
           href="/contactus"
           buttonText="Chat melalui WA"
           vector={ImgVector3}
+        />
+
+        <Grid
+          bgColor="bg-monggagrey"
+          orderA="md:order-2"
+          icon={Vektor1}
+          orderB="md:order-1"
+          headingValue="Kompetisi Business Plan"
+          paragraphValue="Buat kamu yang ingin melanjutkan studi ke luar negeri, 
+        yuk persiapkan matang-matang bersama Mongga. Disini kamu bisa berkonsultasi 
+        dengan fasilitator kami yang sudah berpengalaman melanjutkan studi keluar negeri. 
+        Selain itu, kamu juga bisa mempersiapkan kebutuhan bahasa kamu bersama Mongga untuk 
+        memenuhi syarat-syarat studi ke luar negeri."
+          href="/contactus"
+          buttonText="Chat melalui WA"
+          vector={ImgVector2}
         />
 
         <div className="flex space-x-5 my-10"></div>

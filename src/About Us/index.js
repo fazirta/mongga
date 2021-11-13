@@ -176,7 +176,7 @@ export default function AboutUs() {
               Head of Operation and Program Management
             </h1>
           </div>
-          <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
+          {/* <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
             <img
               alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
@@ -187,7 +187,7 @@ export default function AboutUs() {
               <br />
               Head of Programming
             </h1>
-          </div>
+          </div> */}
           <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
             <img
               alt=""
@@ -200,7 +200,7 @@ export default function AboutUs() {
               Head Director of Design
             </h1>
           </div>
-          <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
+          {/* <div className="flex align-center flex-col md: w-52 lg:w-96 h-56 md:h-72">
             <img
               alt=""
               className="self-center w-24 h-24 md:w-36 md:h-36 object-cover"
@@ -211,7 +211,7 @@ export default function AboutUs() {
               <br />
               Head of Finance
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
       <div>
