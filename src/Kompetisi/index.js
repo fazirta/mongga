@@ -32,14 +32,16 @@ export default function Kompetisi() {
           <DropdownBaru
             title="Klik untuk mempelajari"
             desc={
-              <div className="flex justify-around">
+              <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 justify-around">
                 <div className="flex flex-col justify-center">
-                  <h1 className="font-poppins font-semibold text-2xl">
+                  <h1 className="font-poppins font-semibold text-2xl text-center">
                     Pelatihan Favorit yang Diminati:{" "}
                   </h1>
                 </div>
-                <div className="flex space-x-10">
-                  <img alt="" src={ksn} />
+                <div className="flex justify-center flex-row space-x-10">
+                  <div>
+                    <img alt="" src={ksn} />
+                  </div>
                   <div className="flex flex-col justify-center space-y-5">
                     <h1 className="font-poppins font-semibold text-xl">
                       Olimpiade KSN TIngkat SMP
