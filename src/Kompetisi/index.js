@@ -34,17 +34,17 @@ export default function Kompetisi() {
             desc={
               <div className="flex justify-around">
                 <div className="flex flex-col justify-center">
-                  <h1 className="font-poppins font-bold text-2xl">
+                  <h1 className="font-poppins font-semibold text-2xl">
                     Pelatihan Favorit yang Diminati:{" "}
                   </h1>
                 </div>
                 <div className="flex space-x-10">
                   <img alt="" src={ksn} />
                   <div className="flex flex-col justify-center space-y-5">
-                    <h1 className="font-poppins font-bold text-xl">
+                    <h1 className="font-poppins font-semibold text-xl">
                       Olimpiade KSN TIngkat SMP
                     </h1>
-                    <h1 className="font-poppins font-bold text-xl">
+                    <h1 className="font-poppins font-semibold text-xl">
                       Olimpiade KSN TIngkat SMA
                     </h1>
                   </div>

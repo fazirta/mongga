@@ -11,11 +11,11 @@ export default function CardKompetisi(props) {
                     />
                     <div className="font-poppins text-left">
                         <h1
-                            className="text-2xl md:text-4xl font-bold"
+                            className="text-2xl md:text-4xl font-semibold"
                         >
                             {props.title}
                         </h1>
-                        <p className="py-5">
+                        <p className="py-5 font-light text-lg">
                             {props.desc}
                         </p>
                     </div>
