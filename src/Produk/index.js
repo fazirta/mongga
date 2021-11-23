@@ -70,11 +70,7 @@ export default function Produk() {
           icon={Vektor1}
           orderB="md:order-1"
           headingValue="Kompetisi Business Plan"
-          paragraphValue="Buat kamu yang ingin melanjutkan studi ke luar negeri, 
-        yuk persiapkan matang-matang bersama Mongga. Disini kamu bisa berkonsultasi 
-        dengan fasilitator kami yang sudah berpengalaman melanjutkan studi keluar negeri. 
-        Selain itu, kamu juga bisa mempersiapkan kebutuhan bahasa kamu bersama Mongga untuk 
-        memenuhi syarat-syarat studi ke luar negeri."
+          paragraphValue="Mongga menawarkan berbagai fitur persiapan kompetisi berbasis blended learning. Disini, kamu bisa mempersiapkan diri untuk kompetisi secara autodidak menggunakan berbagai fitur asinkron Mongga maupun dengan dibimbing langsung oleh mentor-mentor terbaik kami."
           href="/contactus"
           buttonText="Chat melalui WA"
           vector={ImgVector2}
