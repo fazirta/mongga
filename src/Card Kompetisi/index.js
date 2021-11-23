@@ -5,7 +5,7 @@ export default function CardKompetisi(props) {
         <div className="flex flex-col lg:flex-row lg:space-x-5 lg:space-x-28 w-full px-3 md:px-32 lg:px-48 py-3 lg:py-10">
           <img
             alt=""
-            className="w-20 md:w-32 lg:w-auto object-cover mx-auto my-8 lg:my-auto"
+            className="w-16 md:w-32 lg:w-auto my-8 lg:my-auto"
             src={props.src}
           />
           <div className="font-poppins">
