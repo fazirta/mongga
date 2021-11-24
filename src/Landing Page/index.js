@@ -25,7 +25,7 @@ import image3 from "../img/image-3.png";
 import image_2 from "../img/image-2.png";
 import image from "../img/image.png";
 import dafina2 from "../img/dafina 2.png";
-import asdasd1 from "../img/asdasd 1.png";
+import luki1 from "../img/luki 1.png";
 import dafbmm1 from "../img/dafbmm 1.png";
 import Screenshot1068 from "../img/Screenshot (1068).png";
 import Screenshot1126 from "../img/Screenshot (1126).png";
@@ -273,24 +273,24 @@ Python for Beginners (Biomed SGU)"
             <CardReview
               src={dafina2}
               name="Dafina Farah Fatima"
-              course="Student at"
+              course="Student at MH Thamrin"
               review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardReview
-              src={asdasd1}
-              name="Narga Naraya Andono"
-              course="Student at"
-              review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”"
+              src={luki1}
+              name="Luki Richard"
+              course="Student at Universitas Negeri Surabaya"
+              review="Di Mongga sangat kolaboratif sehingga saya bisa bertukar pikiran dengan sesama  Terima kasih telah memberi saya kesempatan berharga untuk menjadi bagian dari Mongga Indonesia!"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardReview
               src={dafbmm1}
-              name="Balya Elfata"
-              course="Student at"
-              review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“"
+              name="Yudhistira Ajidharma Santosa"
+              course="Teknik Industri ITS, Intern at Harisenin.com as UX Researcher"
+              review="“Disini kita dituntut untuk selalu belajar dan berprogress, lingkungannya juga sangat mendukung karena orang2nya responsif dan profesional”"
             />
           </SwiperSlide>
         </Swiper>
