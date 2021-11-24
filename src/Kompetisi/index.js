@@ -3,6 +3,7 @@ import DropdownBaru from "../Dropdown Baru";
 import Heading1 from "../Heading1";
 import JumbotronHijau from "../Jumbotron Hijau";
 import FiturPelatihan from "../Fitur Pelatihan";
+import ButtonKuning from "../Button Kuning";
 import Medal from "../img/medal.png";
 import CardKompetisi from "../Card Kompetisi";
 import Research from "../img/research.png";
@@ -78,6 +79,15 @@ export default function Kompetisi() {
                     ],
                   ]}
                 />
+                <h1 className="text-center font-poppins font-semibold text-xl">
+                  Daftarkan Diri atau Lembagamu Sekarang!
+                </h1>
+                <div className="py-6">
+                  <ButtonKuning
+                    href="/contactus"
+                    text="Hubungi Kami Via WhatsApp"
+                  />
+                </div>
               </div>
             }
           />
@@ -91,23 +101,34 @@ export default function Kompetisi() {
           <DropdownBaru
             title="Klik untuk mempelajari"
             desc={
-              <FiturPelatihan
-                contents={[
-                  [
-                    rating,
-                    "Pembimbingan dan Konsultasi oleh Mentor Ahli Berpengalaman",
-                  ],
-                  [route, "Dituntun dari Awal hingga Akhir Proses Riset"],
-                  [
-                    agile,
-                    "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
-                  ],
-                  [
-                    file,
-                    "Database Hasil Riset yang dapat diakses secara bebas 24 Jam",
-                  ],
-                ]}
-              />
+              <div>
+                <FiturPelatihan
+                  contents={[
+                    [
+                      rating,
+                      "Pembimbingan dan Konsultasi oleh Mentor Ahli Berpengalaman",
+                    ],
+                    [route, "Dituntun dari Awal hingga Akhir Proses Riset"],
+                    [
+                      agile,
+                      "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
+                    ],
+                    [
+                      file,
+                      "Database Hasil Riset yang dapat diakses secara bebas 24 Jam",
+                    ],
+                  ]}
+                />
+                <h1 className="text-center font-poppins font-semibold text-xl">
+                  Daftarkan Diri atau Lembagamu Sekarang!
+                </h1>
+                <div className="py-6">
+                  <ButtonKuning
+                    href="/contactus"
+                    text="Hubungi Kami Via WhatsApp"
+                  />
+                </div>
+              </div>
             }
           />
         </div>
@@ -120,22 +141,33 @@ export default function Kompetisi() {
           <DropdownBaru
             title="Klik untuk mempelajari"
             desc={
-              <FiturPelatihan
-                contents={[
-                  [
-                    rating,
-                    "Pembimbingan dan Konsultasi bersama Mentor Ahli Berpengalaman",
-                  ],
-                  [
-                    agile,
-                    "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
-                  ],
-                  [
-                    artificialintelligence,
-                    "Metode Pelatihan dilakukan secara teori dan praktik",
-                  ],
-                ]}
-              />
+              <div>
+                <FiturPelatihan
+                  contents={[
+                    [
+                      rating,
+                      "Pembimbingan dan Konsultasi bersama Mentor Ahli Berpengalaman",
+                    ],
+                    [
+                      agile,
+                      "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
+                    ],
+                    [
+                      artificialintelligence,
+                      "Metode Pelatihan dilakukan secara teori dan praktik",
+                    ],
+                  ]}
+                />
+                <h1 className="text-center font-poppins font-semibold text-xl">
+                  Daftarkan Diri atau Lembagamu Sekarang!
+                </h1>
+                <div className="py-6">
+                  <ButtonKuning
+                    href="/contactus"
+                    text="Hubungi Kami Via WhatsApp"
+                  />
+                </div>
+              </div>
             }
           />
         </div>
@@ -148,23 +180,34 @@ export default function Kompetisi() {
           <DropdownBaru
             title="Klik untuk mempelajari"
             desc={
-              <FiturPelatihan
-                contents={[
-                  [
-                    rating,
-                    "Pembimbingan dan Konsultasi oleh Mentor Ahli Berpengalaman",
-                  ],
-                  [route, "Dituntun dari Awal hingga Akhir Proses Riset"],
-                  [
-                    agile,
-                    "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
-                  ],
-                  [
-                    file,
-                    "Database Hasil Riset yang dapat diakses secara bebas 24 Jam",
-                  ],
-                ]}
-              />
+              <div>
+                <FiturPelatihan
+                  contents={[
+                    [
+                      rating,
+                      "Pembimbingan dan Konsultasi oleh Mentor Ahli Berpengalaman",
+                    ],
+                    [route, "Dituntun dari Awal hingga Akhir Proses Riset"],
+                    [
+                      agile,
+                      "Waktu dan Durasi Fleksibel Menyesuaikan Jadwal dan Kebutuhan",
+                    ],
+                    [
+                      file,
+                      "Database Hasil Riset yang dapat diakses secara bebas 24 Jam",
+                    ],
+                  ]}
+                />
+                <h1 className="text-center font-poppins font-semibold text-xl">
+                  Daftarkan Diri atau Lembagamu Sekarang!
+                </h1>
+                <div className="py-6">
+                  <ButtonKuning
+                    href="/contactus"
+                    text="Hubungi Kami Via WhatsApp"
+                  />
+                </div>
+              </div>
             }
           />
         </div>
