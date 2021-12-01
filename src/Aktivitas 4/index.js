@@ -27,34 +27,34 @@ export default function Aktivitas4() {
             <div className="px-3 py-5 xl:py-10 xl:px-0 mx-auto max-w-7xl">
                 <div className="flex flex-wrap justify-around xl:justify-between">
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim1} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim1} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim2} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim2} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim3} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim3} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim4} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim4} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim5} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim5} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim6} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim6} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim7} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim7} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim8} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim8} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim9} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim9} />
                     </div>
                     <div className="p-3 lg:p-6">
-                        <img className="w-96 xl:w-auto" src={Olim10} />
+                        <img alt="" className="w-96 xl:w-auto" src={Olim10} />
                     </div>
                 </div>
             </div>

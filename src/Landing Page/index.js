@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ButtonHijau from "../Button Hijau";
-import CardPersegi from "../Card Persegi";
+import ButtonKuning from "../Button Kuning";
 import CardReview from "../Card Review";
 import Heading1 from "../Heading1";
 import CardPersegiPanjang from "../Card Persegi Panjang";
@@ -15,8 +15,6 @@ import logo from "../img/MONGGA LOGO WHITEE 1.png";
 import online from "../img/online gr 1.png";
 import leader from "../img/leader 1.png";
 import crowd from "../img/crowd 1.png";
-import Component24 from "../img/Component 24.png";
-import student5540227_19201 from "../img/student-5540227_1920 1.png";
 import sman11jakarta from "../img/sman 11 jakarta.png";
 import Group194 from "../img/Group 194.png";
 import image_1 from "../img/image-1.png";
@@ -26,24 +24,17 @@ import image1 from "../img/image1.png";
 import image3 from "../img/image-3.png";
 import image_2 from "../img/image-2.png";
 import image from "../img/image.png";
-import Group233 from "../img/Group 233.png";
-import Group234 from "../img/Group 234.png";
-import Group235 from "../img/Group 235.png";
-import Group236 from "../img/Group 236.png";
-import Group237 from "../img/Group 237.png";
-import Group238 from "../img/Group 238.png";
-import Group239 from "../img/Group 239.png";
-import Group240 from "../img/Group 240.png";
-import Group241 from "../img/Group 241.png";
-import Group242 from "../img/Group 242.png";
-import Group243 from "../img/Group 243.png";
-import asdasd1 from "../img/asdasd 1.png";
+import dafina2 from "../img/dafina 2.png";
+import luki1 from "../img/luki 1.png";
 import dafbmm1 from "../img/dafbmm 1.png";
-import Group199 from "../img/Group 199.png";
-import img263684 from "../img/263684.png";
-import img263686 from "../img/263686.png";
-import img263699 from "../img/263699.png";
+import Screenshot1068 from "../img/Screenshot (1068).png";
+import Screenshot1126 from "../img/Screenshot (1126).png";
+import Screenshot1081 from "../img/Screenshot (1081).png";
 import GambarAktivitas from "../Gambar Aktivitas";
+import component28 from "../img/Component 28.png";
+import group246 from "../img/Group 246.png";
+import group248 from "../img/Group 248.png";
+import group249 from "../img/Group 249.png";
 
 export default function LandingPage() {
   SwiperCore.use([Navigation, Pagination]);
@@ -85,7 +76,7 @@ export default function LandingPage() {
             title="Mentor Berpengalaman dan Berkualitas di bidangnya"
             link="Mentor Kami >"
             src={leader}
-            href="/aktivitas"
+            href="/mentor"
           />
           <CardPersegiPanjang
             dataAOS="zoom-in-up"
@@ -93,139 +84,111 @@ export default function LandingPage() {
             title="Telah digunakan dan dibuktikan oleh banyak orang"
             link="Testimoni >"
             src={crowd}
-            href="/aktivitas"
+            href="/testimoni"
           />
         </div>
       </div>
-      <div className="px-3 xl:px-0 mx-auto mt-10 md:mt-20 max-w-7xl">
-        <div className="relative max-w-xs md:max-w-md lg:max-w-xl mx-auto flex justify-center h-12 lg:h-24">
-          <div className="flex justify-center h-10 lg:h-20 w-full rounded-full bg-darkgreen shadow-xl">
-            <h1 className="text-white font-bold font-poppins text-xs lg:text-xl self-center">
-              Temukan topik yang kamu inginkan!
+      <div className="bg-darkgreen">
+        <div className="px-3 py-5 xl:py-16 xl:px-0 mx-auto mt-5 md:mt-10 max-w-7xl">
+          <div>
+            <h1 className="text-yellow-400 font-bold text-4xl font-poppins text-center">
+              Kejar dan Raih Juaramu!
             </h1>
+            <h2 className="text-lg text-white text-center mt-5 font-extralight font-poppins">
+              Dorong kemampuan diri dan jadilah juara sekarang!
+            </h2>
           </div>
-          <div className="bg-mainyellow w-11/12 rounded-full h-3 lg:h-5 absolute bottom-1 lg:bottom-2 shadow-xl"></div>
-        </div>
-      </div>
-      <div className="relative mt-20 overflow-x-hidden">
-        <div className="flex justify-center">
-          <div className="py-6 md:py-0 px-3 max-w-7xl absolute w-full h-full flex flex-col md:flex-row align-center">
-            <div className="JuaraText flex flex-col justify-center">
-              <div className="mx-auto">
-                <h1
-                  className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-5 font-poppins"
-                  style={{ lineHeight: "1.16" }}
-                >
-                  Kejar dan <br />
-                  Raih Juaramu!
-                </h1>
-                <h2 className="text-white text-sm md:text-xl lg:text-2xl font-light font-poppins">
-                  Dorong kemampuan diri dan jadilah juara sekarang!
-                </h2>
+          <div className="max-w-5xl mx-auto">
+            <div className="md:mt-24">
+              <div className="flex flex-col md:flex-row justify-between">
+                <div className="mt-16 md:mt-0">
+                  <img alt="" src={component28} className="mx-auto" />
+                  <h1 className="text-3xl text-white font-poppins font-bold underline text-center mt-5">
+                    Olimpiade >
+                  </h1>
+                </div>
+                <div className="max-w-xl mx-auto md:mx-0 mt-16 md:mt-0">
+                  <h1 className="text-3xl text-white font-poppins font-bold max-w-xl">
+                    Persiapkan Diri karena Persaingan Ketat Menanti!
+                  </h1>
+                  <h2 className="text-lg text-white font-poppins font-extralight max-w-lg mt-5">
+                    Dalam olimpiade akademik, persaingan akan terus menjadi
+                    ketat dan setiap tahunnya akan semakin berat! Persiapkan
+                    diri bersama Mongga karena kami punya metode dan mentor
+                    terbaik untuk kamu yang tidak mau menjadi
+                    si-datang-dan-pulang-tanpa-medali!
+                  </h2>
+                </div>
               </div>
             </div>
-            <Swiper
-              className="mt-8 md:mt-0 max-w-full md:max-w-sm lg:max-w-lg"
-              spaceBetween={0}
-              slidesPerView={1}
-              navigation={true}
-              autoplay={true}
-            >
-              <SwiperSlide>
-                <CardPersegi title="Olimpiade" src={Group233} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardPersegi title="Riset" src={Group234} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardPersegi title="Bahasa" src={Group235} />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-        <img
-          alt=""
-          className="h-96 md:h-auto w-full object-cover"
-          src={Component24}
-        />
-      </div>
-      <div className="mt-10 py-10 max-w-7xl mx-auto px-3">
-        <div>
-          <h1 className="text-darkgreen font-bold text-4xl text-center font-poppins">
-            Upgrading Diri
-          </h1>
-        </div>
-        <Swiper
-          data-aos="fade-up"
-          className="max-w-full"
-          spaceBetween={0}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 3,
-            },
-          }}
-          autoplay={true}
-        >
-          <SwiperSlide>
-            <CardPersegi title="Robotik" src={Group236} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Data Science" src={Group237} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Programming Website" src={Group238} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Programming Android" src={Group239} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Programming Games" src={Group240} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Desain Grafis" src={Group241} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Videografi" src={Group242} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardPersegi title="Seminar Motivasi" src={Group243} />
-          </SwiperSlide>
-        </Swiper>
-        <ButtonHijau
-          dataAOS="zoom-in"
-          href="/produk"
-          text="Pelajari Selengkapnya"
-        />
-      </div>
-      <div className="my-20 px-3 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:justify-center space-y-10 md:space-y-0 md:space-x-24">
-          <div>
-            <img
-              alt=""
-              className="w-48 h-40 lg:w-96 lg:h-80 object-cover rounded-2xl"
-              src={student5540227_19201}
-            />
-          </div>
-          <div className="flex flex-col justify-center align-center">
-            <a
-              className="font-poppins text-darkgreen font-bold text-xl"
-              href="/"
-            >
-              Ingin melanjutkan studi ke luar negeri?
-            </a>
-            <p className="font-poppins text-darkgreen max-w-sm mt-8">
-              Persiapkan dirimu di Study Abroad bersama Mongga!
-            </p>
-            <div className="flex my-5">
-              <ButtonHijau
+            <div className="md:mt-24">
+              <div className="flex flex-col md:flex-row justify-between">
+                <div className="max-w-xl mx-auto md:mx-0 mt-16 md:mt-0">
+                  <h1 className="text-3xl text-white font-poppins font-bold max-w-xl">
+                    Ide yang Baik + Struktur Penulisan yang Baik = Menang(?)
+                  </h1>
+                  <h2 className="text-lg text-white font-poppins font-extralight max-w-lg mt-5">
+                    Kalau kamu berpikir rumus diatas adalah satu-satunya cara
+                    untuk menang dalam lomba riset ilmiah coba dipikirkan lagi
+                    deh! Ada segudang hal yang jauh lebih kompleks yang telah
+                    Mongga sederhanakan agar kamu memiliki karya paling baik
+                    diantara yang terbaik!
+                  </h2>
+                </div>
+                <div className="mt-16 md:mt-0">
+                  <img alt="" src={group246} className="mx-auto" />
+                  <h1 className="text-3xl text-white font-poppins font-bold underline text-center mt-5">
+                    Riset >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="md:mt-24">
+              <div className="flex flex-col md:flex-row justify-between">
+                <div className="mt-16 md:mt-0">
+                  <img alt="" src={group248} className="mx-auto" />
+                  <h1 className="text-3xl text-white font-poppins font-bold underline text-center mt-5">
+                    Bahasa >
+                  </h1>
+                </div>
+                <div className="max-w-xl mx-auto md:mx-0 mt-16 md:mt-0">
+                  <h1 className="text-3xl text-white font-poppins font-bold max-w-xl">
+                    “Saya Pintar Bahasa Inggris” Masih Belum Cukup!
+                  </h1>
+                  <h2 className="text-lg text-white font-poppins font-extralight max-w-lg mt-5">
+                    Lomba Bahasa, apapun bahasanya, tidak hanya bisa dimenangkan
+                    dengan sebuah pernyataan saja! Segala persiapan,
+                    perencanaan, dan strategi, baik yang bersifat teknis maupun
+                    personal, ada aturan mainnya dan bisa kamu dapatkan
+                    seutuhnya bersama Mongga!
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="md:mt-24">
+              <div className="flex flex-col md:flex-row justify-between">
+                <div className="max-w-xl mx-auto md:mx-0 mt-16 md:mt-0">
+                  <h1 className="text-3xl text-white font-poppins font-bold max-w-xl">
+                    Usaha yang Benar Tidak Akan Bisa Berjalan Tanpa Perencanaan!
+                  </h1>
+                  <h2 className="text-lg text-white font-poppins font-extralight max-w-lg mt-5">
+                    Kata orang dalam merencanakan bisnis ada “seni”nya, dan
+                    dalam perlombaan secara tidak langsung menuntut kita membuat
+                    “seni” yang luar biasa. Mongga akan menuntun kamu agar
+                    mendapatkan “seni” itu , dan pastinya harus luar biasa!
+                  </h2>
+                </div>
+                <div className="mt-16 md:mt-0">
+                  <img alt="" src={group249} className="mx-auto" />
+                  <h1 className="text-3xl text-white font-poppins font-bold underline text-center mt-5">
+                    Business Plan >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="mt-24">
+              <ButtonKuning
                 dataAOS="zoom-in"
-                className="self-start"
                 href="/produk"
                 text="Pelajari Selengkapnya"
               />
@@ -233,12 +196,14 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="my-10" style={{ background: "#D2D8CE" }}>
+      <div className="my-10">
         <div className="pt-10 pb-1 px-3 max-w-7xl mx-auto">
           <div className="flex justify-center">
-            <h1 className="text-darkgreen font-bold text-xl font-poppins border-b-4 border-yellow-400 pb-2">
-              Aktivitas Terkini{" "}
-            </h1>
+            <a href="/aktivitas">
+              <h1 className="text-darkgreen font-bold text-3xl font-poppins pb-2">
+                Aktivitas Terkini >
+              </h1>
+            </a>
           </div>
           <Swiper
             data-aos="fade-up"
@@ -262,13 +227,30 @@ export default function LandingPage() {
             autoplay={true}
           >
             <SwiperSlide>
-              <GambarAktivitas src={img263699} position="right" />
+              <GambarAktivitas
+                src={Screenshot1068}
+                position="right"
+                title="Grow Series : 
+Bootcamp Programming"
+                date="14 Agustus - 14 September 2021"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263686} position="right" />
+              <GambarAktivitas
+                src={Screenshot1126}
+                position="right"
+                title="Short Class #1"
+                date="26 Juni - 11 Juli 2021"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <GambarAktivitas src={img263684} position="right" />
+              <GambarAktivitas
+                src={Screenshot1081}
+                position="right"
+                title="BESt Workshop : 
+Python for Beginners (Biomed SGU)"
+                date="4-5 Juni 2021"
+              />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -283,44 +265,32 @@ export default function LandingPage() {
           data-aos="fade-up"
           className="max-w-full my-10"
           spaceBetween={0}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 2,
-            },
-            1080: {
-              slidesPerView: 3,
-            },
-          }}
           autoplay={true}
+          navigation={true}
+          slidesPerView={1}
         >
-          <SwiperSlide>
+          <SwiperSlide className="flex justify-center">
             <CardReview
-              src={asdasd1}
-              name="Narga Naraya Andono"
-              course="Kelas Videografi"
-              review="“Hal yang paling berkesan buatku adalah ketika belajar after effect. Kakak mentornya interaktif. Penjelasannya cukup dapat dimengerti oleh apprentice lain dan selalu ngasih kita masukan untuk meng-improve skill kita. Meskipun di youtube ada tutorialnya, namun seringkali membingungkan. Tapi kalau ikut kelas ini kan kita bisa langsung tanya ke mentor ketika ada yang tidak dimengerti”"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardReview
-              src={Group199}
+              src={dafina2}
               name="Dafina Farah Fatima"
-              course="Kelas Programming"
+              course="Student at MH Thamrin"
               review="“Mongga taught me how to have fun while obtaining new knowledge and find satisfaction from creating things”"
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardReview
+              src={luki1}
+              name="Luki Richard"
+              course="Student at Universitas Negeri Surabaya"
+              review="Di Mongga sangat kolaboratif sehingga saya bisa bertukar pikiran dengan sesama  Terima kasih telah memberi saya kesempatan berharga untuk menjadi bagian dari Mongga Indonesia!"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardReview
               src={dafbmm1}
-              name="Balya Elfata"
-              course="Kelas Videografi"
-              review="“Kemarin aku belajar banyak hal, tapi yang paling berkesan adalah hologram effect karena simple tapi efeknya keren. Mentornya asik, sabar, dan juga video kita ditonton satu per satu jadi bisa dapet saran dari mentor dan peserta lainnya.“"
+              name="Yudhistira Ajidharma Santosa"
+              course="Teknik Industri ITS, Intern at Harisenin.com as UX Researcher"
+              review="“Disini kita dituntut untuk selalu belajar dan berprogress, lingkungannya juga sangat mendukung karena orang2nya responsif dan profesional”"
             />
           </SwiperSlide>
         </Swiper>

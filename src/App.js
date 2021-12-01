@@ -1,5 +1,6 @@
-import "./App.css"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import LandingPage from "./Landing Page";
@@ -9,8 +10,8 @@ import ContactUs from "./Contact Us";
 import Komunitas from "./Komunitas";
 import Kompetisi from "./Kompetisi";
 import AboutUs from "./About Us";
-import UpgradingDiri from "./Upgrading Diri";
-import UpgradingDiriLengkap from "./Upgrading Diri Lengkap";
+// import UpgradingDiri from "./Upgrading Diri";
+// import UpgradingDiriLengkap from "./Upgrading Diri Lengkap";
 import Mentor from "./Mentor";
 import Testimoni from "./Testimoni";
 import Aktivitas1 from "./Aktivitas 1";
@@ -24,60 +25,27 @@ import Aktivitas7 from "./Aktivitas 7";
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route path="/testimoni">
-            <Testimoni />
-          </Route>
-          <Route path="/mentor">
-            <Mentor />
-          </Route>
-          <Route path="/aktivitas/apprenticeship">
-            <Aktivitas1 />
-          </Route>
-          <Route path="/aktivitas/webinar">
-            <Aktivitas2 />
-          </Route>
-          <Route path="/aktivitas/open-class">
-            <Aktivitas3 />
-          </Route>
-          <Route path="/aktivitas/pelatihan-olimpiade">
-            <Aktivitas4 />
-          </Route>
-          <Route path="/aktivitas/workshop">
-            <Aktivitas5 />
-          </Route>
-          <Route path="/aktivitas/short-class">
-            <Aktivitas6 />
-          </Route>
-          <Route path="/aktivitas/bootcamp">
-            <Aktivitas7 />
-          </Route>
-          <Route path="/aktivitas">
-            <Aktivitas />
-          </Route>
-          <Route path="/produk/kompetisi">
-            <Kompetisi />
-          </Route>
-          <Route path="/produk">
-            <Produk />
-          </Route>
-          <Route path="/aboutus">
-            <AboutUs />
-          </Route>
-          <Route path="/contactus">
-            <ContactUs />
-          </Route>
-          <Route path="/komunitas">
-            <Komunitas />
-          </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/testimoni" element={<Testimoni />} />
+          <Route path="/mentor" element={<Mentor />} />
+          <Route path="/aktivitas/apprenticeship" element={<Aktivitas1 />} />
+          <Route path="/aktivitas/webinar" element={<Aktivitas2 />} />
+          <Route path="/aktivitas/open-class" element={<Aktivitas3 />} />
+          <Route path="/aktivitas/pelatihan-olimpiade" element={<Aktivitas4 />} />
+          <Route path="/aktivitas/workshop" element={<Aktivitas5 />} />
+          <Route path="/aktivitas/short-class" element={<Aktivitas6 />} />
+          <Route path="/aktivitas/bootcamp" element={<Aktivitas7 />} />
+          <Route path="/aktivitas" element={<Aktivitas />} />
+          <Route path="/produk" element={<Kompetisi />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/komunitas" element={<Komunitas />} />
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
