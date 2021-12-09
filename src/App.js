@@ -38,8 +38,7 @@ function App() {
           <Route path="/aktivitas/short-class" element={<Aktivitas6 />} />
           <Route path="/aktivitas/bootcamp" element={<Aktivitas7 />} />
           <Route path="/aktivitas" element={<Aktivitas />} />
-          <Route path="/produk/kompetisi" element={<Kompetisi />} />
-          <Route path="/produk" element={<Produk />} />
+          <Route path="/produk" element={<Kompetisi />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/komunitas" element={<Komunitas />} />
