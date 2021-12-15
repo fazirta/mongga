@@ -1,0 +1,87 @@
+{
+  "name": "@splidejs/splide",
+  "version": "3.6.9",
+  "description": "Splide is a lightweight, flexible and accessible slider/carousel. No dependencies, no Lighthouse errors.",
+  "author": "Naotoshi Fujita",
+  "license": "MIT",
+  "main": "dist/js/splide.cjs.js",
+  "module": "dist/js/splide.esm.js",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "splide",
+    "slider",
+    "carousel",
+    "slideshow",
+    "gallery",
+    "lightweight",
+    "touch",
+    "responsive",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Splidejs/splide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Splidejs/splide/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "autoprefixer": "^10.4.0",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^8.2.3",
+    "chokidar": "^3.5.2",
+    "cssnano": "^5.0.11",
+    "esbuild": "^0.13.15",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1",
+    "postcss": "^8.3.11",
+    "rollup": "^2.60.1",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-esbuild": "^4.7.2",
+    "sass": "^1.43.4",
+    "stylelint": "^14.1.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.0.0",
+    "ts-jest": "^27.0.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2",
+    "uglify-js": "^3.14.3"
+  },
+  "scripts": {
+    "develop": "node scripts/develop.js",
+    "build:js": "node scripts/build-script.js",
+    "build:module": "node scripts/build-module.js",
+    "build:types": "node scripts/build-types.js",
+    "build:css": "node scripts/build-css.js",
+    "build:all": "npm run build:js && npm run build:module && npm run build:css && npm run build:types",
+    "check:types": "tsc --noEmit",
+    "jest": "jest --clearCache && jest",
+    "eslint": "eslint src",
+    "stylelint": "npx stylelint --fix ./src/css/**/*.scss",
+    "beforecommit": "npm run eslint && npm run stylelint && npm run jest && npm run build:all"
+  },
+  "browserslist": [
+    "> 5%",
+    "ie 10"
+  ],
+  "files": [
+    "dist",
+    "src/css/",
+    "src/js/components",
+    "src/js/constants",
+    "src/js/constructors",
+    "src/js/core",
+    "src/js/renderer",
+    "src/js/transitions",
+    "src/js/types",
+    "src/js/utils"
+  ]
+}
