@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
+import { Menu, Popover, Transition } from "@headlessui/react";
 import {
   MenuIcon,
   PhoneIcon,
@@ -8,6 +8,7 @@ import {
   XIcon,
   UserGroupIcon,
   ArchiveIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/outline";
 
 const navigation = [
@@ -74,12 +75,60 @@ export default function Navbar() {
                 Aktivitas
               </a>
 
-              <a
-                href="/produk"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-              >
-                Produk
-              </a>
+              <Menu as="div" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                <Menu.Button className="inline-flex text-base font-medium text-gray-500 hover:text-gray-900">
+                  Produk
+                  <ChevronDownIcon
+                    className="absolut w-5 h-5 ml-1 mt-0.5 text-violet-200 hover:text-violet-100"
+                    aria-hidden="true"
+                  />
+                </Menu.Button>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items as='ul' className="absolute mt-1 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="px-1 py-1">
+                      <Menu.Item as='li'>
+                        {({ active }) => (
+                          <a
+                            className={`${active && 'bg-green-500'} text-base font-medium group flex rounded-md items-center w-full px-2 py-2`}
+                            href="/kompetisi"
+                          >
+                            Kompetisi
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item as='li'>
+                        {({ active }) => (
+                          <a
+                            className={`${active && 'bg-green-500'} text-base font-medium group flex rounded-md items-center w-full px-2 py-2`}
+                              href="https://mongga.id/tryout"
+                          >
+                            Try Out
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item as='li'>
+                        {({ active }) => (
+                          <a
+                            className={`${active && 'bg-green-500'} text-base font-medium group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                              href="https://mongga.id/mongga-belajar"
+                          >
+                            Open Class
+                          </a>
+                        )}
+                      </Menu.Item>
+                    </div>
+                  </Menu.Items>
+
+                </Transition>
+              </Menu>
 
               <a
                 href="https://t.me/joinchat/-FYL91EUszBmZGQ1"
