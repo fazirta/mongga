@@ -9,6 +9,9 @@ import {
   UserGroupIcon,
   ArchiveIcon,
   ChevronDownIcon,
+  BookOpenIcon,
+  PresentationChartBarIcon,
+  BeakerIcon,
 } from "@heroicons/react/outline";
 
 const navigation = [
@@ -24,8 +27,22 @@ const navigation = [
   },
   {
     name: "Produk",
-    href: "/produk",
     icon: ArchiveIcon,
+  },
+  {
+    name: "Kompetisi",
+    href: "/kompetisi",
+    icon: BeakerIcon,
+  },
+  {
+    name: "Try Out",
+    href: "https://mongga.id/tryout",
+    icon: PresentationChartBarIcon,
+  },
+  {
+    name: "Open Class",
+    href: "https://mongga.id/mongga-belajar",
+    icon: BookOpenIcon,
   },
   {
     name: "Komunitas",
@@ -75,11 +92,11 @@ export default function Navbar() {
                 Aktivitas
               </a>
 
-              <Menu as="div" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                <Menu.Button className="inline-flex text-base font-medium text-gray-500 hover:text-gray-900">
+              <Menu as="div" className="relative ml-3">
+                <Menu.Button className="inline-flex rounded-md text-sm text-base font-medium text-gray-500 hover:text-gray-900">
                   Produk
                   <ChevronDownIcon
-                    className="absolut w-5 h-5 ml-1 mt-0.5 text-violet-200 hover:text-violet-100"
+                    className="absolute w-5 h-5 ml-14 mt-0.5 text-violet-200 hover:text-violet-100"
                     aria-hidden="true"
                   />
                 </Menu.Button>
@@ -181,7 +198,115 @@ export default function Navbar() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
-                    {navigation.map((item) => (
+                    <div>
+                      <a
+                        key={navigation[0].name}
+                        href={navigation[0].href}
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                      >
+                        <UsersIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900">{navigation[0].name}</span>
+                      </a>
+                      <a
+                        key={navigation[1].name}
+                        href={navigation[1].href}
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                      >
+                        <AcademicCapIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900">{navigation[1].name}</span>
+                      </a>
+                      <Menu as="div" className="-m-3 p-3 items-center rounded-md hover:bg-gray-50">
+                        <Menu.Button className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                          <ArchiveIcon className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"/>
+                          <span className="ml-3 text-base font-medium text-gray-900">{navigation[2].name}</span>
+                          <ChevronDownIcon
+                            className="w-5 h-5 ml-2 text-gray-900"
+                            aria-hidden="true"
+                          />
+                        </Menu.Button>
+                        <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
+                        >
+                          <Menu.Items as="ul" className="divide-y divide-gray-100 focus:outline-none">
+                            <div className="px-1 py-1">
+                              <Menu.Item as="li">
+                                {({ active }) => (
+                                  <a 
+                                    key={navigation[3].name}
+                                    href={navigation[3].href}
+                                    className={`${active && 'bg-green-500'} ml-3 text-base font-medium text-gray-900 group flex rounded-md items-center w-full px-2 py-1`}
+                                  >
+                                    <BeakerIcon 
+                                      className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                                    />
+                                    <span className="ml-3 text-base font-medium text-gray-900">{navigation[3].name}</span>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item as="li">
+                                {({ active }) => (
+                                  <a 
+                                  key={navigation[4].name}
+                                  href={navigation[4].href}
+                                  className={`${active && 'bg-green-500'} ml-3 text-base font-medium text-gray-900 group flex rounded-md items-center w-full px-2 py-1`}
+                                >
+                                  <PresentationChartBarIcon
+                                    className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                                  />
+                                  <span className="ml-3 text-base font-medium text-gray-900">{navigation[4].name}</span>
+                                </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item as="li">
+                                {({ active }) => (
+                                  <a 
+                                  key={navigation[5].name}
+                                  href={navigation[5].href}
+                                  className={`${active && 'bg-green-500'} ml-3 text-base font-medium text-gray-900 group flex rounded-md items-center w-full px-2 py-1`}
+                                >
+                                  <BookOpenIcon 
+                                    className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                                  />
+                                  <span className="ml-3 text-base font-medium text-gray-900">{navigation[5].name}</span>
+                                </a>
+                                )}
+                              </Menu.Item>
+                            </div>
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                      <a
+                        key={navigation[6].name}
+                        href={navigation[6].href}
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                      >
+                        <UserGroupIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900">{navigation[6].name}</span>
+                      </a>
+                      <a
+                        key={navigation[7].name}
+                        href={navigation[7].href}
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                      >
+                        <PhoneIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-600" aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900">{navigation[7].name}</span>
+                      </a>
+                    </div>
+                    {/* {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -195,7 +320,7 @@ export default function Navbar() {
                           {item.name}
                         </span>
                       </a>
-                    ))}
+                    ))} */}
                   </nav>
                 </div>
               </div>
